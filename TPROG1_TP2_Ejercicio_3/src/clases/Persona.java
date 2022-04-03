@@ -13,26 +13,26 @@ public class Persona {
     public Persona(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.emails = new ArrayList<Email>();
+        this.emails = new ArrayList<>();
         this.telefonos = new ArrayList<>();
         this.mascotas = new ArrayList<>();
         this.hitos = new ArrayList<>();
     }
 
     public boolean agregar(Object o) {
-    	boolean eliminado = false;
-    	if(o != null) {	
-	        if (o instanceof NumeroTelefonico) {
-	            eliminado = telefonos.add((NumeroTelefonico) o);
-	        } else if (o instanceof Email) {
-	            eliminado = emails.add((Email) o);
-	        } else if (o instanceof Mascota) {
-	            eliminado = mascotas.add((Mascota) o);
-	        } else if (o instanceof Hito) {
-	            eliminado = hitos.add((Hito) o);
-	        }
-    	}
-        return eliminado;
+        boolean agregado = false;
+        if (o != null) {
+            if (o instanceof NumeroTelefonico) {
+                agregado = telefonos.add((NumeroTelefonico) o);
+            } else if (o instanceof Email) {
+                agregado = emails.add((Email) o);
+            } else if (o instanceof Mascota) {
+                agregado = mascotas.add((Mascota) o);
+            } else if (o instanceof Hito) {
+                agregado = hitos.add((Hito) o);
+            }
+        }
+        return agregado;
     }
 
     public boolean eliminar(Object o) {
@@ -46,7 +46,6 @@ public class Persona {
         } else if (o instanceof Hito) {
             eliminado = hitos.remove(o);
         }
-
         return eliminado;
     }
 

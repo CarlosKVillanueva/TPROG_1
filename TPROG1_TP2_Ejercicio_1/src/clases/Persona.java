@@ -11,7 +11,7 @@ public class Persona {
     public Persona(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.emails = new ArrayList<Email>();
+        this.emails = new ArrayList<>();
         this.telefonos = new ArrayList<>();
     }
 

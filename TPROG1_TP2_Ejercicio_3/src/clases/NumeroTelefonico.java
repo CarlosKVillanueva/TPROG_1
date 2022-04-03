@@ -17,11 +17,17 @@ public class NumeroTelefonico {
     }
 
     public String getValor() {
-        return "(+" + codigoDePais + ")" + caracteristica + "-" + numeroDeAbonado;
+    	String cod = String.format("%03d", codigoDePais);
+        String car = String.format("%04d", caracteristica);
+        String num = String.format("%04d", numeroDeAbonado);
+
+        return String.format("(+%3.3s)%4.4s-%4.4s\n", cod, car, num);
+
     }
 
     public void mostrarTodo() {
-        System.out.println(this.tipoDeLinea + ": " + getValor());
+
+        System.out.printf(this.tipoDeLinea + ": " + getValor());
     }
 
     @Override

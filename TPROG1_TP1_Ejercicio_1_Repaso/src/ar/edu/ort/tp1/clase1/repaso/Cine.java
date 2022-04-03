@@ -7,8 +7,7 @@ public class Cine {
 	private String nombre;
 	private String peli;
 	private ArrayList<Funcion> funciones;
-	// OP 1: Misma Funcion
-	// private Funcion funcionABuscar;
+
 
 	public Cine(String nombre, String peli) {
 		this.nombre = nombre;
@@ -20,32 +19,19 @@ public class Cine {
 		int idx = 0;
 
 		while (idx < entradas.size() && todasOk) {
-			// Validar la entrada en sub idx
 			Entrada e = entradas.get(idx);
 			todasOk = validarEntrada(e);
 			idx++;
 		}
 
 		if (todasOk) {
-			// OP 1 Misma Funcion
-			// funcionABuscar.marcarAsientos(entradas);
-
-			// OP2 Buscando la entrada nuevamente en caso de que sean diferentes funciones
-			// marcarAsiento(entradas);
-
-			// OP3 Con Metodo Estatico
 			Funcion.marcarAsiento();
 		}
 
 		return todasOk;
 	}
 
-	// private void marcarAsiento(ArrayList<Entrada> entradas) {
-	// for (Entrada entrada : entradas) {
-	// Funcion funcion = buscarFuncion(entrada.getDia(), entrada.getHora());
-	// funcion.marcarAsientos();
-	// }
-	// }
+	
 
 	private boolean validarEntrada(Entrada e) {
 		Funcion funcion = buscarFuncion(e.getDia(), e.getHora());
