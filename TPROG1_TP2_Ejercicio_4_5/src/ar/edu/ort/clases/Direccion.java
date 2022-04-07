@@ -16,14 +16,6 @@ public class Direccion {
         this.departamento = departamento;
     }
 
-    public String getPiso() {
-        return piso;
-    }
-
-    public String getDepartamento() {
-        return departamento;
-    }
-
     public String mostrarDpto() {
         return String.format("%s \"%s\"",piso, departamento);
     }
