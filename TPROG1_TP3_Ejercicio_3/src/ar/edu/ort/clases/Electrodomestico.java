@@ -1,6 +1,6 @@
 package ar.edu.ort.clases;
 
-public class Electrodomestico {
+public abstract class Electrodomestico {
     private String marca;
     private String modelo;
     private String nroSerie;
@@ -26,20 +26,10 @@ public class Electrodomestico {
         return modelo;
     }
 
-    public String getNroSerie() {
-        return nroSerie;
-    }
+    public double getPrecio() { return precio; }
 
-    public int getVoltaje() {
-        return voltaje;
-    }
-
-    public boolean isEstado() {
-        return estado;
-    }
-
-    public double getPrecio() {
-        return precio;
+    public String detalleParcial(){
+        return String.format("%s %s %s", getClass().getSimpleName(),marca, modelo);
     }
 
     @Override
@@ -53,4 +43,6 @@ public class Electrodomestico {
                 ", precio=" + precio +
                 '}';
     }
+
+
 }

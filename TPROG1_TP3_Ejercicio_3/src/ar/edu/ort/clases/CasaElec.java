@@ -16,6 +16,18 @@ public class CasaElec {
         electrodomesticos.add(e);
     }
 
+    public void mostrarCompra() {
+        System.out.println("Ticket de Venta");
+        System.out.println("Articulos:");
+        double totalCompra = 0;
+        for (Electrodomestico e : electrodomesticos) {
+            System.out.println(e);
+            totalCompra += e.getPrecio();
+        }
+        System.out.println("Total Compra: $" + totalCompra);
+    }
+
+
     @Override
     public String toString() {
         return "CasaElec{" +
@@ -23,5 +35,6 @@ public class CasaElec {
                 ", electrodomesticos=" + electrodomesticos +
                 '}';
     }
+
 }
 

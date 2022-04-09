@@ -12,10 +12,9 @@ public class Licuadora extends Electrodomestico{
 
 
     @Override
-    public String toString() {
-        return "Licuadora{" +
-                "potencia=" + potencia +
-                ", velocidades=" + velocidades +
-                '}';
+        public String toString() {
+            return String.format("%s %s modelo %s, %d velocidades, %d  => Precio: $%.2f",getClass().getSimpleName(),
+                    super.getMarca(), super.getModelo(), this.velocidades, this.potencia,  super.getPrecio());
+        }
     }
-}
+

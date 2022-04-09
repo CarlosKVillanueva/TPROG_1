@@ -11,11 +11,9 @@ public class Televisor extends Electrodomestico{
         this.smart = smart;
     }
 
-    @Override
+        @Override
     public String toString() {
-        return "Televisor{" +
-                "pulgadas=" + pulgadas +
-                ", smart=" + smart +
-                '}';
+        return String.format("%s %s %s %s pulgadas, modelo %s => Precio: $%.2f",getClass().getSimpleName(), (smart ? "smart " : "no smart"),
+                super.getMarca(), this.pulgadas, super.getModelo(), super.getPrecio());
     }
 }

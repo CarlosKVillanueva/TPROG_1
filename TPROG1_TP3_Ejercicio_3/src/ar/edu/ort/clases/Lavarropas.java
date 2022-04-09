@@ -14,9 +14,7 @@ public class Lavarropas extends  Electrodomestico{
 
     @Override
     public String toString() {
-        return "Lavarropas{" +
-                "cargaMax=" + cargaMax +
-                ", tipo=" + tipo +
-                '}';
+        return getClass().getSimpleName() + " " + super.getMarca() + " " + tipo + ", carga maxima " + cargaMax + ", modelo " +
+                super.getModelo() + " => Precio: " + super.getPrecio();
     }
 }
