@@ -11,6 +11,7 @@ public class CasaElec {
         electrodomesticos = new ArrayList<>();
     }
 
+
     public void agregarElectro(Electrodomestico e) {
         electrodomesticos.add(e);
     }

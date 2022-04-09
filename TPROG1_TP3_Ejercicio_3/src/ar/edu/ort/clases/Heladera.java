@@ -12,9 +12,6 @@ public class Heladera extends Electrodomestico{
 
     @Override
     public String toString() {
-        return "Heladera{" +
-                "capacicad=" + capacicad +
-                ", frost=" + frost +
-                '}';
+        return getClass().getSimpleName() + " " + super.getMarca() + " , modelo " + super.getModelo() +   ;
     }
 }

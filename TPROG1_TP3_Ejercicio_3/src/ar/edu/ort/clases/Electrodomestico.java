@@ -18,6 +18,29 @@ public class Electrodomestico {
         this.precio = precio;
     }
 
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public String getNroSerie() {
+        return nroSerie;
+    }
+
+    public int getVoltaje() {
+        return voltaje;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
 
     @Override
     public String toString() {

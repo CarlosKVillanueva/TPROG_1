@@ -8,9 +8,7 @@ public class Asalariado extends Empleado {
         this.sueldo = sueldo;
     }
 
-    @Override
     public float calcularPago() {
         return sueldo;
     }
-
 }

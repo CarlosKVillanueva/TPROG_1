@@ -1,6 +1,6 @@
 package ar.edu.ort.clases;
 
-public class Empleado {
+public abstract class Empleado {
     private String nombre;
     private int edad;
 
@@ -19,9 +19,7 @@ public class Empleado {
         return edad;
     }
 
-    public float calcularPago(){
-        return 0.0f;
-    }
+    public abstract float calcularPago();
 
     @Override
     public String toString(){
