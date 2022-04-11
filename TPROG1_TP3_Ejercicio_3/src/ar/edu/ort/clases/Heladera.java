@@ -12,7 +12,7 @@ public class Heladera extends Electrodomestico{
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + " " + super.getMarca() + ", modelo " + super.getModelo() + ", " + (frost ? "frost" : "no frost") + ", capacidad " +
-                this.capacicad + " litros => Precio: " + super.getPrecio();
+        return String.format("%s %s, modelo %s, %s, capacidad %d litros => Precio: $ %.2f", getClass().getSimpleName(), super.getMarca(), super.getModelo(), (frost ? "frost" : "no frost"),
+                this.capacicad, super.getPrecio());
     }
 }
