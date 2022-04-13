@@ -18,7 +18,7 @@ public class Ticket {
                 '}';
     }
 
-    public void agregarElectro(Electrodomestico e) {
+    public void compra(Electrodomestico e) {
         compras.add(e);
     }
 
