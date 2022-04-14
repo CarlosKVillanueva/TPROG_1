@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="-303.7130989597046" y="-218.19675874163147">ar.edu.ort.clases.Ticket</node>
+    <node x="-152.3181251361736" y="95.40879821977057">ar.edu.ort.clases.Lavarropas</node>
+    <node x="174.06803675666907" y="-218.19675874163147">ar.edu.ort.clases.Cliente</node>
+    <node x="952.7036363152299" y="95.40879821977057">ar.edu.ort.clases.Licuadora</node>
+    <node x="362.35201562726866" y="-350.19675874163147">ar.edu.ort.clases.Electrodomestico</node>
+    <node x="-379.38297669284157" y="95.40879821977057">ar.edu.ort.clases.Tipo</node>
+    <node x="403.35189860774284" y="-663.8023157030335">ar.edu.ort.clases.CasaElec</node>
+    <node x="581.6963824980954" y="95.40879821977057">ar.edu.ort.clases.Heladera</node>
+    <node x="215.6891286809609" y="95.40879821977057">ar.edu.ort.clases.Televisor</node>
+    <node x="891.0796455424502" y="-137.74941958102156">ar.edu.ort.clases.Imprimible</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Licuadora" target="ar.edu.ort.clases.Electrodomestico" relationship="GENERALIZATION">
+      <point x="2.343994083275902E-5" y="-61.00027819370683" />
+      <point x="1122.2036597551707" y="-11.0" />
+      <point x="539.852" y="-11.0" />
+      <point x="-1.5627268680873385E-5" y="148.99975874163147" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Heladera" target="ar.edu.ort.clases.Electrodomestico" relationship="GENERALIZATION">
+      <point x="2.7725707525405596E-4" y="-61.00027819370683" />
+      <point x="753.6966597551707" y="-11.0" />
+      <point x="539.852" y="-11.0" />
+      <point x="-1.5627268680873385E-5" y="148.99975874163147" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Lavarropas" target="ar.edu.ort.clases.Electrodomestico" relationship="GENERALIZATION">
+      <point x="-2.1510865573759475E-4" y="-72.00027819370683" />
+      <point x="18.18165975517067" y="-11.0" />
+      <point x="539.852" y="-11.0" />
+      <point x="-1.5627268680873385E-5" y="148.99975874163147" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Licuadora" target="ar.edu.ort.clases.Imprimible" relationship="REALIZATION">
+      <point x="3.6368477003634325E-4" y="61.00020178022942" />
+      <point x="1122.204" y="244.0" />
+      <point x="1309.204" y="244.0" />
+      <point x="1309.204" y="-110.749" />
+      <point x="64.00035445754986" y="4.1958102156058885E-4" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Televisor" target="ar.edu.ort.clases.Imprimible" relationship="REALIZATION">
+      <point x="-1.2868096087004233E-4" y="61.00020178022942" />
+      <point x="385.189" y="244.0" />
+      <point x="1309.204" y="244.0" />
+      <point x="1309.204" y="-110.749" />
+      <point x="64.00035445754986" y="4.1958102156058885E-4" />
+    </edge>
+    <edge source="ar.edu.ort.clases.CasaElec" target="ar.edu.ort.clases.Electrodomestico" relationship="TO_MANY">
+      <point x="1.0139225719285605E-4" y="83.00030070880052" />
+      <point x="14.99998437273132" y="-149.00042810957962" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Ticket" target="ar.edu.ort.clases.Cliente" relationship="TO_ONE">
+      <point x="126.0" y="0.0" />
+      <point x="-82.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Lavarropas" target="ar.edu.ort.clases.Imprimible" relationship="REALIZATION">
+      <point x="1.2513617359033447E-4" y="72.00020178022942" />
+      <point x="18.182" y="267.241" />
+      <point x="763.0" y="267.241" />
+      <point x="763.0" y="244.0" />
+      <point x="1309.204" y="244.0" />
+      <point x="1309.204" y="-110.749" />
+      <point x="64.00035445754986" y="4.1958102156058885E-4" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Ticket" target="ar.edu.ort.clases.Electrodomestico" relationship="TO_MANY">
+      <point x="0.0" y="-83.0" />
+      <point x="-177.7130989597046" y="-289.97269944858704" />
+      <point x="335.82326111744567" y="-289.97269944858704" />
+      <point x="335.82326111744567" y="-289.18358038768366" />
+      <point x="-171.46319008564967" y="-87.98682164605219" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Heladera" target="ar.edu.ort.clases.Imprimible" relationship="REALIZATION">
+      <point x="-3.824980954050261E-4" y="61.00020178022942" />
+      <point x="753.696" y="244.0" />
+      <point x="1309.204" y="244.0" />
+      <point x="1309.204" y="-110.749" />
+      <point x="64.00035445754986" y="4.1958102156058885E-4" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Lavarropas" target="ar.edu.ort.clases.Tipo" relationship="TO_ONE">
+      <point x="-170.5" y="0.0" />
+      <point x="-301.38297669284157" y="167.40879821977057" />
+      <point x="0.0" y="-72.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Electrodomestico" target="ar.edu.ort.clases.Imprimible" relationship="REALIZATION">
+      <point x="177.49998437273132" y="134.94775874163147" />
+      <point x="1309.204" y="-66.249" />
+      <point x="1309.204" y="-110.749" />
+      <point x="64.00035445754986" y="4.1958102156058885E-4" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Televisor" target="ar.edu.ort.clases.Electrodomestico" relationship="GENERALIZATION">
+      <point x="-4.689257902441568E-4" y="-61.00027819370683" />
+      <point x="385.18865975517065" y="-11.0" />
+      <point x="539.852" y="-11.0" />
+      <point x="-1.5627268680873385E-5" y="148.99975874163147" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9212184873949579" showDependencies="true" x="475.31242873432143" y="-184.4310148232595" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

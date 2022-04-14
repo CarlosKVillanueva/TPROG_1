@@ -5,15 +5,9 @@ package ar.edu.ort.entidades;
 
 
 import java.util.ArrayList;
-
-/**
- * Clase que contiene un pedido generado.
- */
 public class Pedido implements Certificable, Mostrable {
 	public static final int NO_ESTA = -1;
-	/*
-	 * Completar atributos
-	 */
+
 	private TipoPedido tipo;
 	private ArrayList<Integer> cantidadList;
 	private ArrayList<Producto> productosList;
@@ -25,12 +19,7 @@ public class Pedido implements Certificable, Mostrable {
 		this.productosList = new ArrayList<>();
 	}
 
-	/**
-	 * Permite agregar un producto al pedido
-	 * 
-	 * @param producto El {@link Producto} a agregar.
-	 * @param cantidad La cantidadd del {@link Producto} a agregar
-	 */
+
 	public void agregarProducto(Producto producto, Integer cantidad) {
 		int idx = buscarProducto(producto);
 		if (idx == NO_ESTA) {
@@ -42,12 +31,6 @@ public class Pedido implements Certificable, Mostrable {
 		}
 	}
 
-	/**
-	 * Saca un producto del pedido.
-	 * 
-	 * @param producto El {@link Producto} a sacar del pedido
-	 * @param cantidad Cantidad del {@link Producto} a sacar del pedido
-	 */
 	public void sacarProducto(Producto producto, int cantidadASacar) {
 		int idx = buscarProducto(producto);
 		if (idx > NO_ESTA) {
@@ -61,12 +44,7 @@ public class Pedido implements Certificable, Mostrable {
  		}
 	}
 
-	/**
-	 * Devuelve el indice del producto buscado en la lista.
-	 * 
-	 * @param p {@link Producto}
-	 * @return El indice >= 0 si encuentra el producto y -1 si no lo encuentra
-	 */
+
 	private int buscarProducto(Producto p) {
 		int i = 0;
 		int idx = -1;
@@ -83,23 +61,13 @@ public class Pedido implements Certificable, Mostrable {
 		return idx;
 	}
 
-	/**
-	 * Indica la cantidad del producto dado.
-	 * 
-	 * @param producto {@link Producto} cuya cantidad se desea averiguar
-	 * @return {@link Integer} conteniendo la cantidad del producto en el pedido -1
-	 *         si no est� el producto
-	 */
+
 	private int cantidadProducto(Producto producto) {
 		int idx = buscarProducto(producto);
 		return idx != NO_ESTA ? cantidadList.get(idx) : NO_ESTA;
 	}
 
-	/**
-	 * Devuelve una estructura conteniendo las lineas del pedido
-	 * 
-	 * @return un la estructura conteniendo {@link LineaPedido}s
-	 */
+
 	private ArrayList<LineaPedido> getTablaProductosPedidos() {
 		ArrayList<LineaPedido> retorno = new ArrayList<>();
 		for (int i = 0; i < productosList.size(); i++) {
@@ -108,11 +76,7 @@ public class Pedido implements Certificable, Mostrable {
 		return retorno;
 	}
 
-	/**
-	 * // * Calcula el importe del pedido
-	 * 
-	 * @return {@link Float} conteniendo el importe del pedido
-	 */
+
 	private float calcularImportePedido() {
 
 		// Completar

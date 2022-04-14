@@ -1,21 +1,11 @@
-/**
- * 
- */
+
 package ar.edu.ort;
 
 import ar.edu.ort.entidades.*;
 
 
-/**
- * Clase que ejecuta el ejercicio con la salida esperada. 
- * 
- * Esta clase no debe ser modificada.
- */
 public class Main {
 
-	/**
-	 * @param args Parametros al main
-	 */
 	public static void main(String[] args) {
 		Pedido p = new Pedido(TipoPedido.POR_MENOR);
 
@@ -32,7 +22,7 @@ public class Main {
 
 		p.mostrar();
 
-		System.out.printf("\n\n\n----------------------------------------------------------------------------------\n\n\n\n");
+		System.out.print("\n\n\n----------------------------------------------------------------------------------\n\n\n\n");
 
 		p = new Pedido(TipoPedido.POR_MAYOR);
 
