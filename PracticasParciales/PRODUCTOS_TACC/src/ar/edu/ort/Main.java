@@ -13,10 +13,9 @@ public class Main {
 
 		p.agregarProducto(new ProductoSinTacc(FamiliaProducto.LACTEO, "Pan Lactalinda", 22, "Otra Certificadora"), 7);
 
-		p.agregarProducto(new ProductoSinTacc(FamiliaProducto.PANIFICADO, "Cereales Kelox", 105, "Mi Certificadora"),
-				2);
+		p.agregarProducto(new ProductoSinTacc(FamiliaProducto.PANIFICADO, "Cereales Kelox", 105, "Mi Certificadora"), 2);
 
-		p.agregarProducto(new ProductoConTacc(FamiliaProducto.REPOSTERO, "Budin de Lim�n", 123), 2);
+		p.agregarProducto(new ProductoConTacc(FamiliaProducto.REPOSTERO, "Budin de Limon", 123), 2);
 
 		p.agregarProducto(new ProductoSinTacc(FamiliaProducto.CEREAL, "Cereales AllBrain", 98, "La Certificadora"), 1);
 

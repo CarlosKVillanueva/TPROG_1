@@ -49,7 +49,7 @@ public class Pedido implements Certificable, Mostrable {
 		int i = 0;
 		int idx = -1;
 
-		while(i != -1 && i < this.productosList.size()){
+		while(idx != -1 && i < this.productosList.size()){
 			Producto productoBuscado = this.productosList.get(i);
 
 			if (productoBuscado.mismoNombre(p.getNombre())) {

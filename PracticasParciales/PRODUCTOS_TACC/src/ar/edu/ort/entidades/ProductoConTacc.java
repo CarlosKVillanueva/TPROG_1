@@ -8,12 +8,6 @@ public class ProductoConTacc extends Producto {
 	public ProductoConTacc(FamiliaProducto familiaProducto, String nombre, float precio) {
 		super(familiaProducto, nombre, precio);
 	}
-
-	@Override
-	public void mostrar() {
-		System.out.println();
-	}
-
 	@Override
 	public String getTaccSinTacc() {
 		return NOMBRE_MOSTRABLE;
