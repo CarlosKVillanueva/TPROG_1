@@ -49,10 +49,10 @@ public class Pedido implements Certificable, Mostrable {
 		int i = 0;
 		int idx = -1;
 
-		while(idx != -1 && i < this.productosList.size()){
+		while(idx == -1 && i < this.productosList.size()){
 			Producto productoBuscado = this.productosList.get(i);
 
-			if (productoBuscado.mismoNombre(p.getNombre())) {
+			if (productoBuscado.equals(p)) {
 				idx = i;
 			} else {
 				i++;
@@ -93,7 +93,7 @@ public class Pedido implements Certificable, Mostrable {
 		int i = 0;
 		boolean retorno = true;
 		while (retorno && i < productosList.size()) {
-			retorno = !(productosList.get(i) instanceof ProductoSinTacc);
+			retorno = !(productosList.get(i) instanceof ProductoConTacc);
 			i++;
 		}
 		return retorno;
@@ -108,6 +108,6 @@ public class Pedido implements Certificable, Mostrable {
 		System.out.println("---------------------------------------------------------------------");
 		System.out.println(isCertificadoSinTACC() ? "El pedido es certificado sin TACC" : "El pedido no es certificado sin TACC");
 		System.out.println("---------------------------------------------------------------------");
-		System.out.println("El precio total del pedido es : $" + calcularImportePedido());
+		System.out.printf("El precio total del pedido es : $%.2f",calcularImportePedido());
 	}
 }
