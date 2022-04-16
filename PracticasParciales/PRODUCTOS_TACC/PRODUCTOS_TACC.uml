@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.entidades</OriginalElement>
+  <nodes>
+    <node x="-423.38825247068286" y="462.6547484911448">ar.edu.ort.entidades.FamiliaProducto</node>
+    <node x="70.62669036497692" y="634.7915785937673">ar.edu.ort.entidades.ProductoConTacc</node>
+    <node x="259.6334122955656" y="-70.71218503070749">ar.edu.ort.entidades.Mostrable</node>
+    <node x="461.7784851991615" y="634.7915785937673">ar.edu.ort.entidades.ProductoSinTacc</node>
+    <node x="-389.3480888217663" y="182.36555824447515">ar.edu.ort.entidades.TipoPedido</node>
+    <node x="-104.23941028355057" y="182.36555824447515">ar.edu.ort.entidades.Pedido</node>
+    <node x="711.8006989016251" y="182.36555824447515">ar.edu.ort.entidades.LineaPedido</node>
+    <node x="-104.23941028355057" y="-37.212185030707474">ar.edu.ort.entidades.Certificable</node>
+    <node x="315.86926825466514" y="226.36555824447515">ar.edu.ort.entidades.Producto</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.entidades.Pedido" target="ar.edu.ort.entidades.Certificable" relationship="REALIZATION">
+      <point x="34.553222070010406" y="-160.0" />
+      <point x="94.31381178645984" y="99.57668660688384" />
+      <point x="2.760589716449431" y="99.57668660688384" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ar.edu.ort.entidades.Pedido" target="ar.edu.ort.entidades.Producto" relationship="TO_MANY">
+      <point x="164.00041028355056" y="114.13444175552485" />
+      <point x="-131.50041229556564" y="92.13444175552485" />
+    </edge>
+    <edge source="ar.edu.ort.entidades.ProductoConTacc" target="ar.edu.ort.entidades.Producto" relationship="GENERALIZATION">
+      <point x="1.4543889994200754E-4" y="-49.999578593767296" />
+      <point x="225.12683580387687" y="589.0" />
+      <point x="447.3688559590995" y="589.0" />
+      <point x="-4.1229556563848746E-4" y="138.00044175552483" />
+    </edge>
+    <edge source="ar.edu.ort.entidades.LineaPedido" target="ar.edu.ort.entidades.Producto" relationship="TO_ONE">
+      <point x="3.77004273559578E-5" y="83.00044175552483" />
+      <point x="841.3007366020524" y="519.866" />
+      <point x="253.0" y="519.866" />
+      <point x="253.0" y="456.5" />
+      <point x="-131.50041229556564" y="92.13444175552485" />
+    </edge>
+    <edge source="ar.edu.ort.entidades.Pedido" target="ar.edu.ort.entidades.TipoPedido" relationship="TO_ONE">
+      <point x="-164.0" y="-88.0" />
+      <point x="96.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.entidades.Pedido" target="ar.edu.ort.entidades.Mostrable" relationship="REALIZATION">
+      <point x="49.553222070010406" y="-160.0" />
+      <point x="109.31381178645984" y="34.287814969292526" />
+      <point x="-151.5" y="44.500000000000014" />
+    </edge>
+    <edge source="ar.edu.ort.entidades.Producto" target="ar.edu.ort.entidades.FamiliaProducto" relationship="TO_ONE">
+      <point x="-15.000412295565638" y="138.0" />
+      <point x="432.3688559590995" y="556.6547484911448" />
+      <point x="110.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.entidades.Producto" target="ar.edu.ort.entidades.Mostrable" relationship="REALIZATION">
+      <point x="-36.235855959099524" y="-138.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="ar.edu.ort.entidades.LineaPedido" target="ar.edu.ort.entidades.Mostrable" relationship="REALIZATION">
+      <point x="-129.49996229957264" y="4.417555248323879E-4" />
+      <point x="628.0" y="265.366" />
+      <point x="628.0" y="-10.212" />
+      <point x="151.49958770443442" y="1.850307074882096E-4" />
+    </edge>
+    <edge source="ar.edu.ort.entidades.Pedido" target="ar.edu.ort.entidades.LineaPedido" relationship="CREATE">
+      <point x="164.0" y="-148.49955824447514" />
+      <point x="-129.5" y="-71.49955824447514" />
+    </edge>
+    <edge source="ar.edu.ort.entidades.ProductoSinTacc" target="ar.edu.ort.entidades.Producto" relationship="GENERALIZATION">
+      <point x="4.97697075729775E-4" y="-61.00040452384803" />
+      <point x="631.7789828962372" y="589.0" />
+      <point x="447.3688559590995" y="589.0" />
+      <point x="-4.1229556563848746E-4" y="138.00044175552483" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9041237113402062" showDependencies="true" x="274.0000000000001" y="414.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
