@@ -18,6 +18,13 @@ public class Main {
         Lavarropas lavarropas = new Lavarropas("Drean", "Concept", "Concept505", 220, false, 49999.99, 5, Tipo.SEMIAUTOMATICO );
         Licuadora licuadora = new Licuadora("Peabody", "Ultra", "ultrape", 220, false, 8999.99, 4000, 4);
 
+        opcionesCompra(casa, heladera, televisor, lavarropas, licuadora);
+        casa.mostrarCompra();
+
+
+    }
+
+    private static void opcionesCompra(CasaElec casa, Heladera heladera, Televisor televisor, Lavarropas lavarropas, Licuadora licuadora) {
         Scanner input = new Scanner(System.in);
 
         System.out.print("*** Articulos ***\n");
@@ -58,11 +65,6 @@ public class Main {
                 opcionCliente = Integer.parseInt(input.next());
             }
         } while (opcionCliente != FINALIZAR_COMPRA);
-
-
-        casa.mostrarCompra();
-
-
     }
 
     private static boolean validarIngreso(int opcionCliente) {
