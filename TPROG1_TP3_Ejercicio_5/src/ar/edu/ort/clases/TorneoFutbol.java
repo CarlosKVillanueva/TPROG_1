@@ -33,7 +33,7 @@ public abstract class TorneoFutbol {
 	
 	public void finalizarJornada(Jornada jornada) {
 		if(jornadas.contains(jornada)) {
-			for (Partido partido : jornada.getPartidos()) {
+			for (Partido partido : jornada.partidosDeLaFecha()) {
 				calcularPuntos(partido);
 			}
 		}
@@ -54,7 +54,7 @@ public abstract class TorneoFutbol {
 		int puntosVisitante			= 0;
 		int golesEquipoLocal 		= partido.getGolesEquipoLocal();
 		int golesEquipoVisitante 	= partido.getGolesEquipoVisitante();
-		
+
 		if(golesEquipoLocal > golesEquipoVisitante){
 			puntosLocal = puntajePartidoGanado();
 			puntosVisitante = puntajePartidoPerdido();
@@ -66,13 +66,14 @@ public abstract class TorneoFutbol {
 		} else {
 			puntosLocal = puntajePartidoEmpatado();
 			puntosVisitante = puntajePartidoEmpatado();
-			if (partido.getGolesEquipoLocal() >= EXTRA_EMPATE) {
-				puntosLocal += puntajeEmpateMas3Goles();
-				puntosVisitante += puntajeEmpateMas3Goles();
-			}
+				if (golesEquipoLocal >= EXTRA_EMPATE) {
+					puntosLocal += puntajeEmpateMas3Goles();
+					puntosVisitante += puntajeEmpateMas3Goles();
+				}
 			}
 		asignarPuntos(partido.getEquipoLocal(), puntosLocal, partido.getEquipoVisitante(), puntosVisitante);
 		}
+
 
 	private int calcularExtras(int puntos, int golesEquipoA, int golesEquipoB) {
 		if ((golesEquipoA - golesEquipoB) > EXTRA_GOLEADA) {
@@ -90,8 +91,8 @@ public abstract class TorneoFutbol {
 	
 
 	private void asignarPuntos(Equipo equipoLocal, int puntosLocal, Equipo equipoVisitante, int puntosVisitante) {
-		equipoLocal.setPuntos(puntosLocal);
-		equipoVisitante.setPuntos(puntosVisitante);
+		equipoLocal.adicionarPuntos(puntosLocal);
+		equipoVisitante.adicionarPuntos(puntosVisitante);
 		
 	}
 

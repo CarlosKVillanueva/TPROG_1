@@ -23,8 +23,8 @@ public class Jornada {
 		partidos.remove(partido);
 	}
 	
-	public ArrayList<Partido> getPartidos() {
-		return partidos;
+	public ArrayList<Partido> partidosDeLaFecha() {
+		return new ArrayList<>(partidos);
 	}
 
 	public int getFecha() {

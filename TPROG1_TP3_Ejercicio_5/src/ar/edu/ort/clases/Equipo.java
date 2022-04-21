@@ -4,11 +4,7 @@ public class Equipo {
 	
 	private String  nombre;
 	private int		puntos;
-
-	public Equipo() {
-		nombre 	= "sin definir";
-		puntos 	= 0;
-	}
+	
 	
 	public Equipo(String nombre, int puntos) {
 		this.nombre = nombre;
@@ -24,15 +20,11 @@ public class Equipo {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
 	public int getPuntos() {
 		return puntos;
 	}
 
-	public void setPuntos(int puntos) {
+	public void adicionarPuntos(int puntos) {
 		this.puntos += puntos;
 	}
 }

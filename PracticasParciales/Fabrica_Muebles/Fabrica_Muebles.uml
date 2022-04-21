@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.tp1.pacial1.clases</OriginalElement>
+  <nodes>
+    <node x="501.71196725244386" y="-17.18073181129556">ar.edu.ort.tp1.pacial1.clases.FabricaDeMuebles</node>
+    <node x="-315.34408201260646" y="314.7318062101972">ar.edu.ort.tp1.pacial1.clases.Mesa</node>
+    <node x="60.69222437960835" y="529.0511113190036">ar.edu.ort.tp1.pacial1.clases.TelaSillon</node>
+    <node x="325.7285307718231" y="314.7318062101972">ar.edu.ort.tp1.pacial1.clases.Silla</node>
+    <node x="24.192224379608348" y="314.7318062101972">ar.edu.ort.tp1.pacial1.clases.Sillon</node>
+    <node x="314.37597124855216" y="-17.180731811295544">ar.edu.ort.tp1.pacial1.clases.Mostrable</node>
+    <node x="-267.84408201260646" y="529.0511113190036">ar.edu.ort.tp1.pacial1.clases.TipoMesa</node>
+    <node x="42.19222437960835" y="-17.180731811295544">ar.edu.ort.tp1.pacial1.clases.Mueble</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.tp1.pacial1.clases.FabricaDeMuebles" target="ar.edu.ort.tp1.pacial1.clases.Mueble" relationship="TO_MANY">
+      <point x="-107.5" y="14.999731811295561" />
+      <point x="109.99999999999997" y="36.99973181129553" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.pacial1.clases.Mesa" target="ar.edu.ort.tp1.pacial1.clases.TipoMesa" relationship="TO_ONE">
+      <point x="0.0" y="82.99999999999994" />
+      <point x="-168.34408201260646" y="539.1366126984658" />
+      <point x="0.0" y="-105.0" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.pacial1.clases.Sillon" target="ar.edu.ort.tp1.pacial1.clases.Mueble" relationship="GENERALIZATION">
+      <point x="-128.00022437960834" y="3.6368718025414637E-4" />
+      <point x="2.0" y="375.73216989737745" />
+      <point x="2.0" y="109.819" />
+      <point x="-110.00022437960834" y="-2.681887044531095E-4" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.pacial1.clases.FabricaDeMuebles" target="ar.edu.ort.tp1.pacial1.clases.Mostrable" relationship="REALIZATION">
+      <point x="-102.56373464126955" y="-21.520522464645182" />
+      <point x="491.2137970353476" y="110.29874572405924" />
+      <point x="491.2137970353476" y="109.81926818870446" />
+      <point x="470.0" y="109.81926818870446" />
+      <point x="470.0" y="9.819" />
+      <point x="61.500028751447815" y="-2.6818870445488585E-4" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.pacial1.clases.Silla" target="ar.edu.ort.tp1.pacial1.clases.Mueble" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.0" />
+      <point x="421.7285307718231" y="161.819" />
+      <point x="109.99999999999997" y="51.99973181129553" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.pacial1.clases.Sillon" target="ar.edu.ort.tp1.pacial1.clases.TelaSillon" relationship="TO_ONE">
+      <point x="0.0" y="60.99999999999994" />
+      <point x="0.0" y="-105.0" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.pacial1.clases.Mueble" target="ar.edu.ort.tp1.pacial1.clases.Mostrable" relationship="REALIZATION">
+      <point x="109.99977562039166" y="-2.681887044531095E-4" />
+      <point x="470.0" y="109.819" />
+      <point x="470.0" y="9.819" />
+      <point x="61.500028751447815" y="-2.6818870445488585E-4" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.pacial1.clases.Mesa" target="ar.edu.ort.tp1.pacial1.clases.Mueble" relationship="GENERALIZATION">
+      <point x="147.00008201260647" y="3.6368718025414637E-4" />
+      <point x="2.0" y="397.73216989737745" />
+      <point x="2.0" y="109.819" />
+      <point x="-110.00022437960834" y="-2.681887044531095E-4" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0366430260047281" showDependencies="true" x="210.4999999999999" y="372.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

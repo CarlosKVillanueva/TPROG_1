@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de364d96-d0ee-4d22-b0b7-1799be6c50a8" name="Changes" comment="Trabajo Practico 3 Ejercicio 4 Modificacion y agregado UML" />
+    <list default="true" id="de364d96-d0ee-4d22-b0b7-1799be6c50a8" name="Changes" comment="Trabajo Practico 3 Ejercicio 4 Modificacion y agregado UML">
+      <change beforePath="$PROJECT_DIR$/../PracticasParciales/PRODUCTOS_TACC/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticasParciales/PRODUCTOS_TACC/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticasParciales/PRODUCTOS_TACC/out/production/PRODUCTOS_TACC/ar/edu/ort/entidades/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticasParciales/PRODUCTOS_TACC/out/production/PRODUCTOS_TACC/ar/edu/ort/entidades/Pedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_3/out/production/TPROG1_TP3_Ejercicio_3/ar/edu/ort/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_3/out/production/TPROG1_TP3_Ejercicio_3/ar/edu/ort/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_3/out/production/TPROG1_TP3_Ejercicio_3/ar/edu/ort/clases/Heladera.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_3/out/production/TPROG1_TP3_Ejercicio_3/ar/edu/ort/clases/Heladera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPROG1_TP3_Ejercicio_4/ar/edu/ort/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TPROG1_TP3_Ejercicio_4/ar/edu/ort/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPROG1_TP3_Ejercicio_4/ar/edu/ort/clases/CasaElec.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TPROG1_TP3_Ejercicio_4/ar/edu/ort/clases/CasaElec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPROG1_TP3_Ejercicio_4/ar/edu/ort/clases/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TPROG1_TP3_Ejercicio_4/ar/edu/ort/clases/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/out/production/TPROG1_TP3_Ejercicio_5/ar/edu/ort/clases/Equipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/out/production/TPROG1_TP3_Ejercicio_5/ar/edu/ort/clases/Equipo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/out/production/TPROG1_TP3_Ejercicio_5/ar/edu/ort/clases/Jornada.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/out/production/TPROG1_TP3_Ejercicio_5/ar/edu/ort/clases/Jornada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/out/production/TPROG1_TP3_Ejercicio_5/ar/edu/ort/clases/TorneoFutbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/out/production/TPROG1_TP3_Ejercicio_5/ar/edu/ort/clases/TorneoFutbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/src/ar/edu/ort/clases/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/src/ar/edu/ort/clases/Equipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/src/ar/edu/ort/clases/Jornada.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/src/ar/edu/ort/clases/Jornada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/src/ar/edu/ort/clases/TorneoFutbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TPROG1_TP3_Ejercicio_5/src/ar/edu/ort/clases/TorneoFutbol.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,13 +109,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/ORT/Segundo_Cuatrimestre/TPROG_1/TPROG1_TP3_Ejercicio_4",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ORT/Segundo_Cuatrimestre/TPROG_1/TPROG1_TP3_Ejercicio_4&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="ar.edu.ort.Main" />
@@ -129,6 +144,8 @@
       <workItem from="1649517501149" duration="3383000" />
       <workItem from="1649866438833" duration="340000" />
       <workItem from="1649866922378" duration="4251000" />
+      <workItem from="1650315825765" duration="1220000" />
+      <workItem from="1650394621676" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="Trabajo Practico 3 Ejercicio 4">
       <created>1649519599052</created>
