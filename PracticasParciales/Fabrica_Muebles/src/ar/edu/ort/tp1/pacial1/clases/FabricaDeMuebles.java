@@ -43,23 +43,14 @@ public class FabricaDeMuebles implements Mostrable {
 		System.out.printf("Fabrica de Muebles: %s\n", this.nombre);
 		System.out.printf("Se han fabricado: %d Mesas, %d Sillas y %d Sillones\nLa venta total fue: $%.2f\n",contMesas, contSillas, contSillones, acum);
 	}
-	
-	public Mueble buscarMuebles(String modelo) {
-	    int i = 0, cantidadElementos = muebles.size();
-	    Mueble elementoBuscado = null;
-	
-	    while (i < cantidadElementos && elementoBuscado == null) {
-	        Mueble elemento = muebles.get(i);
-	        if (elemento.modeloCorrecto(modelo)) {
-	            elementoBuscado = elemento;
-	        } else {
-	            i++;
-	        }
-	    }
-	    return elementoBuscado;
-	}
 
 	public boolean seHaFabricado(String modelo) {
-		return buscarMuebles(modelo) != null;
+		boolean seHaFabricado = false;
+		int i = 0;
+		while (i < muebles.size() && !seHaFabricado) {
+			seHaFabricado = muebles.get(i).modeloCorrecto(modelo);
+			i++;
+		}
+		return seHaFabricado;
 	}
 }
