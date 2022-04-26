@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.tp1.parcial1.clases</OriginalElement>
+  <nodes>
+    <node x="33.924347341168854" y="-14.07796361383356">ar.edu.ort.tp1.parcial1.clases.Animal</node>
+    <node x="-51.291046604677604" y="612.7485402873424">ar.edu.ort.tp1.parcial1.clases.Gato</node>
+    <node x="581.1811102369728" y="612.7485402873424">ar.edu.ort.tp1.parcial1.clases.Conejo</node>
+    <node x="858.7253911526007" y="41.015099276343975">ar.edu.ort.tp1.parcial1.clases.Doctor</node>
+    <node x="246.70677601036908" y="121.72118101314686">ar.edu.ort.tp1.parcial1.clases.Mascota</node>
+    <node x="253.90157365480445" y="612.7485402873424">ar.edu.ort.tp1.parcial1.clases.Perro</node>
+    <node x="-51.291046604677604" y="283.745001859888">ar.edu.ort.tp1.parcial1.clases.Estado</node>
+    <node x="344.2165601596107" y="7.348396392600677">ar.edu.ort.tp1.parcial1.clases.Mostrable</node>
+    <node x="694.5734370573491" y="232.92013086026304">ar.edu.ort.tp1.parcial1.clases.Veterinaria</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.tp1.parcial1.clases.Mascota" target="ar.edu.ort.tp1.parcial1.clases.Animal" relationship="REALIZATION">
+      <point x="-53.490215850758375" y="-215.0" />
+      <point x="326.7165601596107" y="23.92203638616644" />
+      <point x="76.00000000000001" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.parcial1.clases.Veterinaria" target="ar.edu.ort.tp1.parcial1.clases.Mostrable" relationship="REALIZATION">
+      <point x="-4.3705734913146443E-4" y="-127.00013086026306" />
+      <point x="826.073" y="92.0" />
+      <point x="405.717" y="92.0" />
+      <point x="4.3984038927646907E-4" y="26.999603607399322" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.parcial1.clases.Veterinaria" target="ar.edu.ort.tp1.parcial1.clases.Mascota" relationship="TO_MANY">
+      <point x="-131.5" y="-23.198949847116182" />
+      <point x="133.50000000000006" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.parcial1.clases.Gato" target="ar.edu.ort.tp1.parcial1.clases.Mascota" relationship="GENERALIZATION">
+      <point x="64.0" y="-72.0" />
+      <point x="136.2089533953224" y="507.88255416191566" />
+      <point x="-109.70335525780354" y="171.1613731487688" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.parcial1.clases.Mascota" target="ar.edu.ort.tp1.parcial1.clases.Estado" relationship="TO_ONE">
+      <point x="-133.5" y="-15.000181013146857" />
+      <point x="85.0" y="-67.02400185988802" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.parcial1.clases.Perro" target="ar.edu.ort.tp1.parcial1.clases.Mascota" relationship="GENERALIZATION">
+      <point x="1.3052023555646315" y="-72.0" />
+      <point x="0.0" y="215.0" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.parcial1.clases.Conejo" target="ar.edu.ort.tp1.parcial1.clases.Mascota" relationship="GENERALIZATION">
+      <point x="0.0" y="-72.0" />
+      <point x="711.1811102369728" y="504.42013086026304" />
+      <point x="133.50000000000006" y="167.69894984711618" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.parcial1.clases.Mascota" target="ar.edu.ort.tp1.parcial1.clases.Mostrable" relationship="REALIZATION">
+      <point x="2.2398963091063706E-4" y="-215.00018101314686" />
+      <point x="380.207" y="92.0" />
+      <point x="405.717" y="92.0" />
+      <point x="4.3984038927646907E-4" y="26.999603607399322" />
+    </edge>
+    <edge source="ar.edu.ort.tp1.parcial1.clases.Veterinaria" target="ar.edu.ort.tp1.parcial1.clases.Doctor" relationship="TO_ONE">
+      <point x="108.65195409525154" y="-127.0" />
+      <point x="0.0" y="49.999999999999986" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8858585858585859" showDependencies="true" x="549.4418472063853" y="326.70239452679596" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
