@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.org.edu.Ejercicio_2</OriginalElement>
+  <nodes>
+    <node x="-306.30273660205245" y="607.4551393725893">ar.org.edu.Ejercicio_2.Alumno</node>
+    <node x="-315.67673888255416" y="82.986496271107">ar.org.edu.Ejercicio_2.Persona</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.org.edu.Ejercicio_2.Alumno" target="ar.org.edu.Ejercicio_2.Persona" relationship="GENERALIZATION">
+      <point x="0.0" y="72.0" />
+      <point x="-161.80273660205245" y="320.45456924716177" />
+      <point x="-170.17673888255416" y="320.45456924716177" />
+      <point x="0.0" y="-215.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0747549019607843" showDependencies="false" x="105.0" y="393.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

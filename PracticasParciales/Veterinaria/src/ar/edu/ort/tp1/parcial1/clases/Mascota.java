@@ -6,16 +6,11 @@ public abstract class Mascota implements Animal, Mostrable{
 	private static final String MSG_COM_HAMBRIENTO = " dice: Muchas gracias tenia hambre";
 	private static final String MSG_COM_ENFERMO = " dice: No tenia mucha hambre, pero gracias";
 	private static final String MSG_ESTADO = "El estado de %s es: %s\n";
-
 	private static final int CIEN = 100;
-
 
 	private String nombre;
 	private double peso;
 	private boolean vacunado;
-
-
-
 	private Estado estado;
 
 	public Mascota(String nombre, double peso, boolean vacunado, Estado estado) {
@@ -39,13 +34,13 @@ public abstract class Mascota implements Animal, Mostrable{
 		Estado estado = this.estado;
 
 		if (estado == Estado.HAMBRIENTO) {
-			System.out.printf("%s" + MSG_COM_HAMBRIENTO + "\n", nombre);
+			System.out.printf("%s %s\n", nombre, MSG_COM_HAMBRIENTO);
 			estado = Estado.FELIZ;
 		} else if (estado == Estado.FELIZ) {
-			System.out.printf("%s" + MSG_COM_FELIZ + "\n", nombre);
+			System.out.printf("%s %s\n",nombre, MSG_COM_FELIZ);
 			estado = Estado.ENFERMO;
 		} else if (estado == Estado.ENFERMO) {
-			System.out.printf("%s " + MSG_COM_ENFERMO + "\n", nombre);
+			System.out.printf("%s %s\n", nombre, MSG_COM_ENFERMO);
 		}
 		setEstado(estado);
 		this.peso += comida * multiplicador;
