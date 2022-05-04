@@ -1,7 +1,5 @@
 package ar.edu.ort.clases;
 
-import ar.edu.ort.clases.CotizablePorManoObra;
-
 public class Alineacion extends Servicio implements CotizablePorManoObra {
 
 	private static final double EXTRA_BALANCEO = 500;
