@@ -24,19 +24,23 @@ public class TallerMecanico {
 		if (nuevoServicio != null) {
 			agregado = servicios.add(nuevoServicio);
 
-			if (nuevoServicio instanceof Alineacion) {
-				contAlineaciones++;
-			} else if (nuevoServicio instanceof CambioAceite) {
-				contCambios++;
-			} else if (nuevoServicio instanceof Encendido) {
-				contEncendidos++;
-			}
-		acumServiciosTotales += nuevoServicio.calcularPrecioVenta();
+			contadorServicios(nuevoServicio);
+			acumServiciosTotales += nuevoServicio.calcularPrecioVenta();
 		}
 
 		return agregado;
 	}
-	
+
+	private void contadorServicios(Servicio nuevoServicio) {
+		if (nuevoServicio instanceof Alineacion) {
+			contAlineaciones++;
+		} else if (nuevoServicio instanceof CambioAceite) {
+			contCambios++;
+		} else if (nuevoServicio instanceof Encendido) {
+			contEncendidos++;
+		}
+	}
+
 	public void listarServicios() {
 		System.out.printf("Taller %s\n", this.nombre);
 		System.out.printf(FORMATO_CANTIDADES, contCambios, contEncendidos, contAlineaciones);

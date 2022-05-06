@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="703.8793330280305" y="656.3850535416667">ar.edu.ort.clases.CotizablePorManoObra</node>
+    <node x="416.1486818704941" y="77.76000091360748">ar.edu.ort.clases.Servicio</node>
+    <node x="792.3174789051154" y="367.3760839205538">ar.edu.ort.clases.Alineacion</node>
+    <node x="179.74730824639164" y="367.3760839205538">ar.edu.ort.clases.Encendido</node>
+    <node x="235.53325358860138" y="672.102694447153">ar.edu.ort.clases.CotizablePorMateriales</node>
+    <node x="466.53239357575353" y="367.3760839205538">ar.edu.ort.clases.CambioAceite</node>
+    <node x="50.035534988000336" y="-24.56902513002251">ar.edu.ort.clases.TallerMecanico</node>
+    <node x="447.7188318802937" y="-43.65267348046406">ar.edu.ort.clases.Detallable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Alineacion" target="ar.edu.ort.clases.Servicio" relationship="GENERALIZATION">
+      <point x="0.0" y="-83.0" />
+      <point x="939.3174789051154" y="197.76000091360748" />
+      <point x="105.5" y="15.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.CambioAceite" target="ar.edu.ort.clases.Servicio" relationship="GENERALIZATION">
+      <point x="0.0" y="-72.0" />
+      <point x="77.38371170525943" y="105.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Servicio" target="ar.edu.ort.clases.Detallable" relationship="REALIZATION">
+      <point x="105.5" y="0.0" />
+      <point x="521.6486818704941" y="182.76000091360748" />
+      <point x="-7.07015000979959" y="27.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.TallerMecanico" target="ar.edu.ort.clases.Servicio" relationship="TO_MANY">
+      <point x="112.0" y="69.32902604363" />
+      <point x="-105.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.CambioAceite" target="ar.edu.ort.clases.CotizablePorMateriales" relationship="REALIZATION">
+      <point x="0.0" y="72.0" />
+      <point x="599.0323935757535" y="721.602694447153" />
+      <point x="111.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Encendido" target="ar.edu.ort.clases.CotizablePorMateriales" relationship="REALIZATION">
+      <point x="0.0" y="49.5" />
+      <point x="-53.78594534220974" y="-49.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Alineacion" target="ar.edu.ort.clases.CotizablePorManoObra" relationship="REALIZATION">
+      <point x="-131.43814587708493" y="83.0" />
+      <point x="0.0" y="-38.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Encendido" target="ar.edu.ort.clases.Servicio" relationship="GENERALIZATION">
+      <point x="113.0" y="-8.39205538341048E-5" />
+      <point x="449.03239357575353" y="416.876" />
+      <point x="-72.61628829474057" y="105.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.CambioAceite" target="ar.edu.ort.clases.CotizablePorManoObra" relationship="REALIZATION">
+      <point x="125.0" y="72.0" />
+      <point x="-83.84693945227696" y="-38.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0611995104039167" showDependencies="true" x="578.5" y="383.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
