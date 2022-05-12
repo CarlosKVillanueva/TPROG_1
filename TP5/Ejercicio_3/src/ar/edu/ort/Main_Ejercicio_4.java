@@ -75,5 +75,6 @@ public class Main_Ejercicio_4 {
         ga.agregarGasto(Mes.DICIEMBRE, "Comida", 10000);
         ga.agregarGasto(Mes.DICIEMBRE, "Bedida", 4000);
         ga.agregarGasto(Mes.DICIEMBRE, "Servicios", 8000);
+
     }
 }
