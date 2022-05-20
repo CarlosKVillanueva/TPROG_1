@@ -35,13 +35,13 @@ public class Aseguradora implements Mostrable{
 
 
 	public Seguro generarSeguroAuto(float valorAsegurado, MarcaAuto marca, String modelo) {
-		Seguro seguro = new SeguroAuto("Seguro de automotor todo riesgo", valorAsegurado, marca, modelo);
+		Seguro seguro = new SeguroAuto(valorAsegurado, marca, modelo);
 		seguros.add(seguro);
 		return seguro;
 	}
 
 	public Seguro generarSeguroCelular(float valorAsegurado, String marca, String modelo) {
-		Seguro seguro = new SeguroCelular("Seguro de robo de celular", valorAsegurado, marca, modelo);
+		Seguro seguro = new SeguroCelular(valorAsegurado, marca, modelo);
 		seguros.add(seguro);
 		return seguro;
 	}
@@ -54,19 +54,23 @@ public class Aseguradora implements Mostrable{
 
 			System.out.printf(TXT_ASEGURANDO, asegurado, premio);
 
-			if (s instanceof SeguroAuto && asegurado.esMasculino()) {
-				contadorSegurosMasc++;
-			}
+			obtenerEstadisticas(s, asegurado, premio);
 
-			if (s instanceof SeguroCelular) {
-				contCelulares++;
-				acumEdad += asegurado.getEdad();
-			}
+		}
+	}
 
-			if (s instanceof SeguroAuto && premio < minimo) {
-				minimo = premio;
-			}
+	private void obtenerEstadisticas(Seguro s, Asegurado asegurado, double premio) {
+		if (s instanceof SeguroAuto && asegurado.esMasculino()) {
+			contadorSegurosMasc++;
+		}
 
+		if (s instanceof SeguroCelular) {
+			contCelulares++;
+			acumEdad += asegurado.getEdad();
+		}
+
+		if (s instanceof SeguroAuto && premio < minimo) {
+			minimo = premio;
 		}
 	}
 

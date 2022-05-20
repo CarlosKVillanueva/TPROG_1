@@ -1,9 +1,8 @@
 package ar.edu.ort.tp1.parcial1.clases;
 
-public abstract class Seguro {
+public abstract class Seguro implements Mostrable {
 
 	private static final String MOSTRAR_PATTERN = "Seguro de %s, cuya descripción es %s - detalle: %s, pagará mensualmente $ %.2f.\n";
-
 
 	private String descripcion;
 	private Asegurado tomadorDelSeguro;
@@ -26,6 +25,18 @@ public abstract class Seguro {
 
 	protected abstract double calculoEspecifico();
 
+	public double getValorAsegurado() {
+		return valorAsegurado;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	@Override
+	public void mostrar() {
+		System.out.printf(MOSTRAR_PATTERN, getClass().getSimpleName(), this.descripcion,this.texto(), this.valorAsegurado);
+	}
 
 	@Override
 	public String toString() {

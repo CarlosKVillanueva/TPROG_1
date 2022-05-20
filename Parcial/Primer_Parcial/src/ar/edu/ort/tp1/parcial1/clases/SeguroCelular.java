@@ -5,10 +5,11 @@ package ar.edu.ort.tp1.parcial1.clases;
  */
 public class SeguroCelular extends Seguro {
     public static final double INDICE_CONSTANTE = 0.0025;
+    public static final String CONSTANTE_DESCRIPCION = "Seguro de robo de celular";
     private String marca;
 
-    public SeguroCelular(String descripcion, double valorAsegurado, String marca, String modelo) {
-        super(descripcion, valorAsegurado, modelo);
+    public SeguroCelular(double valorAsegurado, String marca, String modelo) {
+        super(CONSTANTE_DESCRIPCION, valorAsegurado, modelo);
         this.marca = marca;
     }
 
@@ -22,5 +23,11 @@ public class SeguroCelular extends Seguro {
         return "SeguroCelular{" +
                 "marca='" + marca + '\'' +
                 '}';
+    }
+
+
+    @Override
+    public String texto() {
+        return String.format(PATRON_TEXTO_CEL,marca,getModelo(),getValorAsegurado());
     }
 }
