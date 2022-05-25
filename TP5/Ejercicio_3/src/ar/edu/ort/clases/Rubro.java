@@ -4,7 +4,7 @@ package ar.edu.ort.clases;
  * Ejercicio_3 @author CKVillanueva el 5/12/2022 | 11:36 AM
  */
 public class Rubro {
-    private final int TOTAL_MESES = 12;
+    private final int TOTAL_MESES = Mes.values().length;
     private String nombre;
     private double gastosPorMes[];
 

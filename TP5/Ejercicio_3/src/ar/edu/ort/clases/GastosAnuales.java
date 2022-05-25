@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Ejercicio_3 @author CKVillanueva el 5/12/2022 | 11:12 AM
  */
 public class GastosAnuales {
-    public static final int CANT_MESES = 12;
+    public static final int CANT_MESES = Mes.values().length;
     private ArrayList<Rubro> rubros;
     double[] acumAnual = new double[CANT_MESES];
 
@@ -15,8 +15,8 @@ public class GastosAnuales {
     }
 
     public void agregarGasto(Mes mes, String nombreRubro, double importe) {
-        Rubro rubro = obtenerRubro(nombreRubro);
         if (importe > 0) {
+            Rubro rubro = obtenerRubro(nombreRubro);
             rubro.agregarGastos(mes,importe);
         }
     }
@@ -56,6 +56,7 @@ public class GastosAnuales {
     }
 
     public double gastoAcumulado(Mes mes) {
+        //TODO FIX
         double gasto = 0;
         for (Rubro rubro : rubros) {
             gasto += rubro.getTotalGastos(mes);
