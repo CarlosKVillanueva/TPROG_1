@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * Ejercicio_3 @author CKVillanueva el 5/12/2022 | 11:12 AM
  */
-public class Main_Ejercicio_4 {
+public class Main_Ejercicio_3 {
     public static void main(String[] args) {
         GastosAnuales ga = new GastosAnuales();
 

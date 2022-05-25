@@ -9,8 +9,9 @@ public class MainBusqueda {
 
         int[][] numeros2 = new int[17][15];
         int inicio = 1;
+        int tamanioMatriz = numeros2[0].length;
         for (int fila = 0; fila < numeros2.length; fila++) {
-            for (int col = 0; col < numeros2[0].length; col++) {
+            for (int col = 0; col < tamanioMatriz; col++) {
                 numeros2[fila][col] = inicio;
                 inicio++;
             }
@@ -22,8 +23,8 @@ public class MainBusqueda {
 
         int  ingreso = 224;
 
-        int posCol = ((ingreso % numeros2[0].length) == 0) ? (numeros2[0].length -1) : ((ingreso % numeros2[0].length) - 1);
-        int posFila = ((ingreso % numeros2[0].length) == 0) ? (ingreso / numeros2[0].length) - 1 : ingreso / numeros2[0].length;
+        int posCol = ((ingreso % tamanioMatriz) == 0) ? (tamanioMatriz -1) : ((ingreso % tamanioMatriz) - 1);
+        int posFila = ((ingreso % tamanioMatriz) == 0) ? (ingreso / tamanioMatriz) - 1 : ingreso / tamanioMatriz;
 
         System.out.println(posCol);
         System.out.println(posFila);
