@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b7f9102-0975-4fe4-ae74-0cfc65433fd2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practica_Escuela.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ar/ort/edu/Main_PracticaEscuela.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ar/ort/edu/clases/Alumno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ar/ort/edu/clases/Curso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ar/ort/edu/clases/Docente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ar/ort/edu/clases/Escuela.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ar/ort/edu/clases/Mostrable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ar/ort/edu/clases/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ar/ort/edu/clases/Preceptor.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28aUFn2abn5VEtju9bXZxWY1v26" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ar.ort.edu.clases" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ar.ort.edu" />
+      <recent name="ar.ot" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Escuela" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ar.ort.edu.Main_PracticaEscuela" />
+      <module name="Practica_Escuela" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b7f9102-0975-4fe4-ae74-0cfc65433fd2" name="Changes" comment="" />
+      <created>1651454088945</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651454088945</updated>
+      <workItem from="1651454090511" duration="3934000" />
+      <workItem from="1651496081292" duration="3019000" />
+      <workItem from="1651504765824" duration="1000" />
+      <workItem from="1651504771744" duration="621000" />
+      <workItem from="1651516798835" duration="906000" />
+      <workItem from="1651581579241" duration="4000" />
+      <workItem from="1651695694392" duration="21000" />
+      <workItem from="1651695726119" duration="34000" />
+      <workItem from="1651695772995" duration="1161000" />
+      <workItem from="1651701087335" duration="309000" />
+      <workItem from="1652381382743" duration="205000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

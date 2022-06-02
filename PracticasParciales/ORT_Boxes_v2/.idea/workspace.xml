@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e3091983-72d6-4425-9d9f-b771455db1cd" name="Changes" comment="Commit Resolucion Parcial">
+      <change afterPath="$PROJECT_DIR$/ORT_Boxes_v2.uml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/clases/TallerMecanico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ar/edu/ort/clases/TallerMecanico.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28WSdUYD42zffoGbDCIafzdSZVD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ORT/Segundo_Cuatrimestre/TPROG_1/PracticasParciales/ORT_Boxes_v2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ar.edu.ort" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Ort_Boxes_v2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ar.edu.ort.Main" />
+      <module name="ORT_Boxes_v2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3091983-72d6-4425-9d9f-b771455db1cd" name="Changes" comment="" />
+      <created>1651330935174</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651330935174</updated>
+      <workItem from="1651330936335" duration="4853000" />
+      <workItem from="1651343990356" duration="551000" />
+      <workItem from="1651704750411" duration="1585000" />
+      <workItem from="1651707009286" duration="189000" />
+      <workItem from="1651707347619" duration="2321000" />
+      <workItem from="1651712984186" duration="712000" />
+      <workItem from="1651788261814" duration="358000" />
+      <workItem from="1651788784751" duration="13000" />
+      <workItem from="1651801048701" duration="4000" />
+      <workItem from="1651840843842" duration="45000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commit Resolucion Parcial">
+      <created>1651707472164</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651707472164</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Commit Resolucion Parcial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Resolucion Parcial" />
+  </component>
+</project>
