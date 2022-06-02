@@ -2,8 +2,6 @@ package ar.edu.ort.clases;
 
 import java.util.Scanner;
 
-
-
 /**
  * Esta clase debe:
  * - Cargar uno o mas diccionarios (uno en cada idioma, al menos dos) para que pueda:
@@ -27,11 +25,36 @@ public class Saludador {
 	private Scanner input;
 	
 	public Saludador(String idioma) {
-		// TODO -- Completar
+		this.idioma = idioma;
+		this.diccionario = new Diccionario();
+		cargarDiccionario(diccionario);
 	}
 
 	private void cargarDiccionario(Diccionario diccionario) {
-		// TODO -Carga los diccionarios de los distintos idiomas
+		diccionario.agregarIdioma("ES", "Espaniol");
+		diccionario.agregarIdioma("EN", "Ingles");
+		diccionario.agregarIdioma("FR", "Frances");
+
+		diccionario.agregarTermino("ES","BIENVENIDA","Hola!");
+		diccionario.agregarTermino("ES","INGRESO","Ingresa tu nombre por favor:\n");
+		diccionario.agregarTermino("ES","LINDO","Que lindo nombre!");
+		diccionario.agregarTermino("ES","DESPEDIDA","Adios %s! Que tengas un lindo dia!\n");
+		diccionario.agregarTermino("ES","AFIRMATIVO","Si!");
+		diccionario.agregarTermino("ES","NEGATIVO","No!");
+
+		diccionario.agregarTermino("EN","BIENVENIDA","Hello!");
+		diccionario.agregarTermino("EN","INGRESO","Enter your name, please:\n");
+		diccionario.agregarTermino("EN","LINDO","What a nice name!");
+		diccionario.agregarTermino("EN","DESPEDIDA","Good bye %s! Have a nice day!\n");
+		diccionario.agregarTermino("EN","AFIRMATIVO","Yes!");
+		diccionario.agregarTermino("EN","NEGATIVO","No!");
+
+		diccionario.agregarTermino("FR","BIENVENIDA","Bonjour!");
+		diccionario.agregarTermino("FR","INGRESO","Saisissez votre nom, s'il vous plaît:\n");
+		diccionario.agregarTermino("FR","LINDO", "C'est un très joli nom!");
+		diccionario.agregarTermino("FR","DESPEDIDA","Au revoir, %s! Bonne journée !\n");
+		diccionario.agregarTermino("FR","AFIRMATIVO","Oui!");
+		diccionario.agregarTermino("FR","NEGATIVO","Non!");
 	}
 
 	public void elegirIdioma(String idioma) throws RuntimeException {
@@ -43,7 +66,14 @@ public class Saludador {
 	}
 
 	public void run() {
-		// TODO - Usa lo definido en el resto de la clase
+		String nombre;
+		input = new Scanner(System.in);
+		System.out.printf("*** %s ***\n", this.idioma);
+		System.out.printf("%s\n",diccionario.obtenerTermino(idioma,"BIENVENIDA"));
+		System.out.printf("%s",diccionario.obtenerTermino(idioma,"INGRESO"));
+		nombre = this.input.nextLine();
+		System.out.printf("%s\n", diccionario.obtenerTermino(idioma,"LINDO"));
+		System.out.printf(diccionario.obtenerTermino(idioma,"DESPEDIDA"),nombre);
 	}
 
 }
