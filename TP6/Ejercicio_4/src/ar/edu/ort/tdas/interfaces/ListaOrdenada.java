@@ -1,6 +1,5 @@
 package ar.edu.ort.tdas.interfaces;
 
-import ar.edu.ort.clases.Idioma;
 
 public interface ListaOrdenada<K, T> extends Tda, Iterable<T> {
 	static final String MSG_INVALID_KEY = "Clave invalida";

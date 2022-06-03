@@ -26,6 +26,9 @@ public class Chofer {
 	}
 
 	private void setDni(int dni) {
+		if (dni < 0) {
+			throw new RuntimeException("EL dni no puede ser menor a 0");
+		}
 		this.dni = dni;
 	}
 
@@ -34,6 +37,9 @@ public class Chofer {
 	}
 
 	private void setNombre(String nombre) {
+		if (nombre == null || nombre.isEmpty()) {
+			throw new RuntimeException("El nombre no puede ser nullo o vacio");
+		}
 		this.nombre = nombre;
 	}
 
@@ -51,7 +57,7 @@ public class Chofer {
 
 	@Override
 	public String toString() {
-		return "Chofer [dni=" + dni + ", legajo=" + legajo + ", nombre=" + nombre + ", vehiculo=" + vehiculo + "]";
+		return "Chofer [dni=" + dni + ", legajo=" + legajo + ", nombre=" + nombre +"]";
 	}
 
 }

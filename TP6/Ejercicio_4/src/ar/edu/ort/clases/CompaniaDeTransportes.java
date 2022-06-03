@@ -1,6 +1,7 @@
 package ar.edu.ort.clases;
 
-import ar.edu.ort.tp1.tdas.interfaces.Cola;
+import ar.edu.ort.tdas.implementaciones.ColaNodos;
+import ar.edu.ort.tdas.interfaces.Cola;
 
 public class CompaniaDeTransportes {
 	private static int ultimoLegajo = 0;
@@ -11,7 +12,9 @@ public class CompaniaDeTransportes {
 
 	// 1 - Crear las estructuras propuestas
 	public CompaniaDeTransportes() {
-		// TODO
+		this.staff = new ListaChoferes();
+		this.flota = new ListaVehiculos();
+		this.viajesListos = new ColaNodos<>();
 	}
 
 	public void altaChofer(int dni, String nombre) {
@@ -59,7 +62,15 @@ public class CompaniaDeTransportes {
 
 	// 2 - Asignar un vehiculo a un chofer (utilizando Excepciones)
 	public void asignarVehiculo(String patenteVehiculo, int dniChofer) {
-		// TODO implementar
+		if (patenteVehiculo == null || patenteVehiculo.isEmpty()) {
+			throw new RuntimeException("El vehiculo ingresado es Invalido");
+		} else if (dniChofer < 0) {
+			throw new RuntimeException("El chofer ingresado es Invalido");
+		}
+		Chofer chofer = staff.search(dniChofer);
+		Vehiculo vehiculo = flota.search(patenteVehiculo);
+		vehiculo.asignarChofer(chofer);
+		chofer.asignarVehiculo(vehiculo);
 	}
 
 	// 3 - Asignar una carga (utilizando Excepciones) al vehiculo que más se
@@ -74,19 +85,47 @@ public class CompaniaDeTransportes {
 	// vehiculos listos para partir.
 	public void asignarCarga(Carga carga) {
 		System.out.println("\n*** ASIGNACION DE CARGA ***");
-		// TODO implementar
+		int i = 0;
+		Vehiculo vehiculo = null;
+		double peso = carga.getPeso();
+
+		while (i < flota.size() && vehiculo == null) {
+			Vehiculo vehiculoActual = flota.get(i);
+			if (validarVehiculo(peso, vehiculoActual)) {
+				vehiculo = vehiculoActual;
+				viajesListos.add(vehiculo);
+				flota.remove(vehiculoActual);
+			}
+			i++;
+		}
+	}
+
+	private boolean validarVehiculo(double peso, Vehiculo vehiculoActual) {
+		return vehiculoActual.getCargaAsignada() == null && vehiculoActual.getChoferACargo() != null && vehiculoActual.getCapacidadDeCarga() > peso;
 	}
 
 	// 4 - Listar choferes libres (que no estan de viaje)
 	public void listarChoferesLibres() {
 		System.out.println("\n--- Choferes Libres ---");
-		// TODO implementar
+		for (Chofer chofer : staff) {
+			if (chofer.ListoParaViajar()) {
+				System.out.println(chofer);
+			}
+		}
 	}
 
 	// 5 - Listar los vehiculos listos para salir de viaje (la estructura debe
 	// quedar en el orden inicial).
 	public void listarVehiculosListosParaPartir() {
-		// TODO implementar
+		viajesListos.add(null);
+		Vehiculo vehiculoListo = viajesListos.remove();
+
+		while ( vehiculoListo != null) {
+			System.out.println(vehiculoListo);
+
+			viajesListos.add(vehiculoListo);
+			vehiculoListo = viajesListos.remove();
+		}
 	}
 
 }

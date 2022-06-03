@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d29a2ac-9ba9-4b42-b686-68dacaf1e12e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/Ejercicio_4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/src/ar/edu/ort/Main_Ejercicio_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/src/ar/edu/ort/clases/Carga.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/src/ar/edu/ort/clases/Chofer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/src/ar/edu/ort/clases/CompaniaDeTransportes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/src/ar/edu/ort/clases/ListaChoferes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/src/ar/edu/ort/clases/ListaVehiculos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/src/ar/edu/ort/clases/TipoVehiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_4/src/ar/edu/ort/clases/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio_3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ejercicio_3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/Main_Ejercicio_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ar/edu/ort/Main_Ejercicio_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/clases/Saludador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ar/edu/ort/clases/Saludador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/implementaciones/ColaNodos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/implementaciones/ListaOrdenadaIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/implementaciones/ListaOrdenadaNodos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/implementaciones/Nodo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/implementaciones/NodoLista.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/implementaciones/PilaNodos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/implementaciones/TdaNodos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/interfaces/Cola.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/interfaces/ListaOrdenada.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/interfaces/Pila.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ar/edu/ort/tdas/interfaces/Tda.java" beforeDir="false" />
-    </list>
+    <list default="true" id="4d29a2ac-9ba9-4b42-b686-68dacaf1e12e" name="Changes" comment="Commit Ejercicio 3 TP6 TP1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,8 +69,23 @@
       <workItem from="1653858032642" duration="3689000" />
       <workItem from="1653875705347" duration="1770000" />
       <workItem from="1654181462993" duration="118000" />
-      <workItem from="1654185230408" duration="4001000" />
+      <workItem from="1654185230408" duration="4102000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit Ejercicio 3 TP6 TP1">
+      <created>1654189326817</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654189326817</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit Ejercicio 3 TP6 TP1">
+      <created>1654189353493</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654189353493</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +101,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit Ejercicio 3 TP6 TP1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Ejercicio 3 TP6 TP1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

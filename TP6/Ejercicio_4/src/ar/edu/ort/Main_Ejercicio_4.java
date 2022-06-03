@@ -1,5 +1,6 @@
 package ar.edu.ort;
 
+import ar.edu.ort.clases.Carga;
 import ar.edu.ort.clases.CompaniaDeTransportes;
 import ar.edu.ort.clases.TipoVehiculo;
 
@@ -58,22 +59,42 @@ public class Main_Ejercicio_4 {
     // cuenta la captura de excepciones.
 
     private static void bajaChofer(int dni) {
-        // TODO implementar
+        try {
+            ct.bajaChofer(dni);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     private static void asignarCargaAVehiculo(String descripcionCarga, double peso) {
-        // TODO implementar
+        try {
+            ct.asignarCarga(new Carga(descripcionCarga,peso));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     private static void altaVehiculo(String patente, TipoVehiculo tipoVehiculo, double cargaMaxima) {
-        // TODO implementar
+        try {
+            ct.altaVehiculo(patente, tipoVehiculo, cargaMaxima);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     private static void altaChofer(int dniChofer, String nombreCompleto) {
-        // TODO implementar
+        try {
+            ct.altaChofer(dniChofer, nombreCompleto);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     private static void asignarVehiculo(String patente, int dniChofer) {
-        // TODO implementar
+        try {
+            ct.asignarVehiculo(patente, dniChofer);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

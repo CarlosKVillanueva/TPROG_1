@@ -1,6 +1,6 @@
 package ar.edu.ort.clases;
 
-import ar.edu.ort.tp1.tdas.implementaciones.ListaOrdenadaNodos;
+import ar.edu.ort.tdas.implementaciones.ListaOrdenadaNodos;
 
 public class ListaChoferes extends ListaOrdenadaNodos<Integer, Chofer> {
 
