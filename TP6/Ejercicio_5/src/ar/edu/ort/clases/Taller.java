@@ -1,6 +1,5 @@
 package ar.edu.ort.clases;
 
-import ar.edu.ort.tdas.interfaces.ListaOrdenada;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
