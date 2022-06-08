@@ -1,5 +1,6 @@
 package ar.edu.ort.clases;
 
+import ar.edu.ort.tdas.interfaces.ListaOrdenada;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -8,13 +9,21 @@ import ar.edu.ort.tdas.implementaciones.ColaNodos;
 import ar.edu.ort.tdas.interfaces.Cola;
 
 public class Taller {
+	private Servicio[] servicios;
 	private static final int MAX_TRABAJOS_DIARIOS = 50;
 	private static float PRECIO_HORA = 3000;
 	private static Scanner input = new Scanner(System.in);
-	// TODO Completar definicion de atributos
+	private Cola<Vehiculo> vehiculosEnPuerta;
+	private ArrayList<Trabajo> trabajosRealizados;
+	int[] cantidadPorServicios;
+	private ListaTrabajosPendientes trabajosPendientes;
 
 	public Taller() {
-		// TODO Implementar constructor
+		vehiculosEnPuerta = new ColaNodos<>(MAX_TRABAJOS_DIARIOS);
+		trabajosRealizados = new ArrayList<>();
+		trabajosPendientes = new ListaTrabajosPendientes();
+		cargarServicios();
+		cantidadPorServicios = new int[servicios.length];
 	}
 
 	/**
@@ -24,7 +33,7 @@ public class Taller {
 	 * @param airbag
 	 */
 	public void agregarVehiculoEnEspera(String patente, String marca, EstadoAirbag airbag) {
-		// TODO - Implementar
+		agregarVehiculoEnEspera(new Auto(patente, marca, airbag));
 	}
 
 	/**
@@ -35,7 +44,7 @@ public class Taller {
 	 * @param tieneLimitador
 	 */
 	public void agregarVehiculoEnEspera(String patente, String marca, int cilindrada, boolean tieneLimitador) {
-		// TODO - Implementar
+		agregarVehiculoEnEspera(new Moto(patente,marca,cilindrada,tieneLimitador));
 	}
 
 	/**
@@ -54,15 +63,18 @@ public class Taller {
 		String[] nombresServicios = { "Cambio de Bateria", "Cambio Aceite y Filtro", "Alineacion y Balanceo",
 				"Cambio amortiguadores", "Servicio completo" };
 		float[] duracionEstimadaServicio = { 0.5f, 1, 1.5f, 2, 3 };
-		// TODO - Para los que tienen que recuperar Arrays
+
+		servicios = new Servicio[nombresServicios.length];
+		for (int i = 0; i < nombresServicios.length; i++) {
+			servicios[i] = new Servicio(i+1, nombresServicios[i], duracionEstimadaServicio[i]);
+		}
 	}
 
 	private Trabajo crearTrabajo(Vehiculo vehiculo) {
 		int numero = 0;
 		numero = pedirServicio();
 		Servicio servicio = servicios[numero - 1];
-		Trabajo trabajo = new Trabajo(vehiculo, servicio);
-		return trabajo;
+		return new Trabajo(vehiculo, servicio);
 	}
 
 	public void informarImporteServicios() {
@@ -71,16 +83,16 @@ public class Taller {
 			System.out.println(trabajo);
 			total += trabajo.getImporte();
 		}
-		System.out.println("La recaudacion del dia fue:" + total);
+		System.out.println("La recaudacion del dia fue: $" + total);
 	}
 
 	/**
 	 * Genera e informa la cantidad de servicios realizados para cada tipo de servicio.
 	 */
 	public void informarResumenServicios() {
-		// TODO - Para los que deben Arrays: Reemplazar por lo correcto y
-		// completar
-		int[] cantidadPorServicios = null;
+		for (int i = 0; i < cantidadPorServicios.length; i++) {
+			System.out.printf("%s: %d\n",servicios[i].getDesc(),cantidadPorServicios[i]);
+		}
 	}
 
 	private void mostrarMenuServicios() {
@@ -99,6 +111,7 @@ public class Taller {
 				numero = input.nextInt();
 				if (numero > 0 && numero <= servicios.length) {
 					ok = true;
+					cantidadPorServicios[numero - 1]++;
 				}
 			} catch (InputMismatchException e) {
 				System.out.println("Error. Ingrese un numero correcto");
@@ -115,7 +128,14 @@ public class Taller {
 	 * el servicio a realizar. (Para crear un Trabajo hacen falta un Vehiculo y un Servicio.
 	 */
 	public void procesarIngresoVehiculos() {
-		// TODO - Implementar. Usa el metodo crearTrabajo
+		Trabajo trabajo;
+		Vehiculo vehiculo;
+		while (!vehiculosEnPuerta.isEmpty()) {
+			vehiculo = vehiculosEnPuerta.remove();
+			System.out.printf("Igresa el Vehiculo %s\n", vehiculo.getPatente());
+			trabajo = crearTrabajo(vehiculo);
+			trabajosPendientes.add(trabajo);
+		}
 	}
 
 	public void procesarServicios() {
@@ -128,7 +148,9 @@ public class Taller {
 	}
 
 	public void reportarTrabajosPendientes() {
-		trabajosPendientes.reportar();
+		for (Trabajo trabajo : trabajosPendientes) {
+			trabajo.reportar();
+		}
 	}
 
 	/**
@@ -138,7 +160,24 @@ public class Taller {
 	 * el orden de los vehiculos en puerta.
 	 */
 	public void revisarVehiculosEnPuerta() {
-		// TODO Implementar
+		Cola<Vehiculo> aceptados = new ColaNodos<>();
+		System.out.println("Vehiclos que no pueden ingresaral taller");
+		Vehiculo vehiculo;
+		while (!vehiculosEnPuerta.isEmpty()) {
+			vehiculo = vehiculosEnPuerta.remove();
+			if (vehiculo.autoDiagnostico()) {
+				aceptados.add(vehiculo);
+			} else {
+				System.out.printf("El vehiculo patente %s no cumple con los requisitos y es rechazado\n", vehiculo.getPatente());
+			}
+		}
+		reordenarCola(aceptados);
+	}
+
+	private void reordenarCola(Cola<Vehiculo> aceptados) {
+		while (!aceptados.isEmpty()) {
+			vehiculosEnPuerta.add(aceptados.remove());
+		}
 	}
 
 }

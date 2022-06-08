@@ -6,9 +6,9 @@ public class Servicio {
 	private float horas;// de 0.5 a 4
 
 	public Servicio(int codigo, String desc, float horas) {
-		this.codigo = codigo;
-		this.desc = desc;
-		this.horas = horas;
+		setCodigo(codigo);
+		setDesc(desc);
+		setHoras(horas);
 	}
 
 	public int getCodigo() {

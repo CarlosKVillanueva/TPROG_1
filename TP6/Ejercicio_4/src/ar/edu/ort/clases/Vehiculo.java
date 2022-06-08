@@ -46,7 +46,7 @@ public class Vehiculo {
 		this.capacidadDeCarga = capacidadDeCarga;
 	}
 
-	private void asignarCarga(Carga cargaAsignada) {
+	public void asignarCarga(Carga cargaAsignada) {
 		this.cargaAsignada = cargaAsignada;
 	}
 
@@ -83,4 +83,10 @@ public class Vehiculo {
 				+ capacidadDeCarga + ", choferACargo=" + choferACargo + ", cargaAsignada=" + cargaAsignada + "]";
 	}
 
+	public void listar() {
+		System.out.printf("""
+						El vehiculo con patente %s esta listo para salir.
+						El conductor del vehiculo es %s y la carga asignada %s (%.2f kg)
+						""", this.patente,this.choferACargo.getNombre(),this.cargaAsignada.getDescripcion(),this.cargaAsignada.getPeso());
+	}
 }

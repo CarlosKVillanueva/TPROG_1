@@ -63,9 +63,11 @@ public class CompaniaDeTransportes {
 	// 2 - Asignar un vehiculo a un chofer (utilizando Excepciones)
 	public void asignarVehiculo(String patenteVehiculo, int dniChofer) {
 		if (patenteVehiculo == null || patenteVehiculo.isEmpty()) {
-			throw new RuntimeException("El vehiculo ingresado es Invalido");
+			throw new RuntimeException("ERROR EN LA ASIGNACION DE VEHICULO A CHOFER\nEl vehiculo ingresado es Invalido");
 		} else if (dniChofer < 0) {
-			throw new RuntimeException("El chofer ingresado es Invalido");
+			throw new RuntimeException("ERROR EN LA ASIGNACION DE VEHICULO A CHOFER\nEl chofer ingresado es Invalido");
+		} else if (flota.search(patenteVehiculo).getChoferACargo() != null) {
+			throw new RuntimeException("ERROR EN LA ASIGNACION DE VEHICULO A CHOFER\nVehiculo con chofer asignado");
 		}
 		Chofer chofer = staff.search(dniChofer);
 		Vehiculo vehiculo = flota.search(patenteVehiculo);
@@ -93,14 +95,17 @@ public class CompaniaDeTransportes {
 			Vehiculo vehiculoActual = flota.get(i);
 			if (validarVehiculo(peso, vehiculoActual)) {
 				vehiculo = vehiculoActual;
+				vehiculo.asignarCarga(carga);
 				viajesListos.add(vehiculo);
 				flota.remove(vehiculoActual);
 			}
 			i++;
 		}
+		System.out.printf("Carga a Transportar: %s (%.2f kg)",carga.getDescripcion(),carga.getPeso());
 	}
 
 	private boolean validarVehiculo(double peso, Vehiculo vehiculoActual) {
+
 		return vehiculoActual.getCargaAsignada() == null && vehiculoActual.getChoferACargo() != null && vehiculoActual.getCapacidadDeCarga() > peso;
 	}
 
@@ -108,7 +113,7 @@ public class CompaniaDeTransportes {
 	public void listarChoferesLibres() {
 		System.out.println("\n--- Choferes Libres ---");
 		for (Chofer chofer : staff) {
-			if (chofer.ListoParaViajar()) {
+			if (chofer.getVehiculo() == null) {
 				System.out.println(chofer);
 			}
 		}
@@ -121,7 +126,7 @@ public class CompaniaDeTransportes {
 		Vehiculo vehiculoListo = viajesListos.remove();
 
 		while ( vehiculoListo != null) {
-			System.out.println(vehiculoListo);
+			vehiculoListo.listar();
 
 			viajesListos.add(vehiculoListo);
 			vehiculoListo = viajesListos.remove();

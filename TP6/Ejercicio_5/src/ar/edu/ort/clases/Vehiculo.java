@@ -14,9 +14,9 @@ public abstract class Vehiculo {
 		return patente;
 	}
 
-	public void setPatente(String patente) throws IllegalArgumentException {
+	private void setPatente(String patente) throws IllegalArgumentException {
 		if (!esPatenteValida((patente))) {
-			// TODO - Completar
+			throw new IllegalArgumentException(String.format("Patente %s invalida: %s", getClass().getSimpleName(), patente == null ? "null" : ""));
 		}
 		this.patente = patente;
 	}

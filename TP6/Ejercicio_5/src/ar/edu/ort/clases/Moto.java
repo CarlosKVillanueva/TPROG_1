@@ -6,7 +6,13 @@ public class Moto extends Vehiculo {
 	private boolean limitador;
 
 	public Moto(String patente, String marca, int cilindrada, boolean limitador) {
-		// TODO - Completar
+		super(patente, marca);
+		setCilindrada(cilindrada);
+		setLimitador(limitador);
+	}
+
+	private void setLimitador(boolean limitador) {
+		this.limitador = limitador;
 	}
 
 	public boolean tieneLimitador() {
@@ -23,6 +29,9 @@ public class Moto extends Vehiculo {
 	}
 
 	public void setCilindrada(int cilindrada) throws IllegalArgumentException {
+		if (cilindrada < CILINDRADA_MINIMA) {
+			throw new IllegalArgumentException("Cilindrada Invalida");
+		}
 		this.cilindrada = cilindrada;
 	}
 

@@ -1,12 +1,15 @@
 package ar.edu.ort.clases;
 
 public class Auto extends Vehiculo {
-
+	private String patente;
+	private String marca;
 	private EstadoAirbag estadoAirbag;// si es 0 OK 1 defectuoso 2 no posee
 
 	public Auto(String patente, String marca, EstadoAirbag airbag) {
-		// TODO - Implementar
+		super(patente, marca);
+		setEstadoAirbag(airbag);
 	}
+
 
 	private void setEstadoAirbag(EstadoAirbag airbag) {
 		estadoAirbag = airbag;
