@@ -2,7 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d29a2ac-9ba9-4b42-b686-68dacaf1e12e" name="Changes" comment="Commit Ejercicio 3 TP6 TP1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/Expedendora.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/Parcial2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/Parcial2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/Parcial2.ucls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/Actualizacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/ActualizacionDirecta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/ActualizacionExtendida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/ActualizacionPorMonto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/ActualizacionPorcentual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/Apreciable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/Expendedora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/HistoricoActualizacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/Identificable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/Listable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/ProductosPorId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ar/edu/ort/tp1/parcial2/clases/ProductosPorNombre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/implementaciones/ColaNodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/implementaciones/ListaOrdenadaIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/implementaciones/ListaOrdenadaNodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/implementaciones/Nodo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/implementaciones/NodoLista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/implementaciones/PilaNodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/implementaciones/TdaNodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/interfaces/Cola.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/interfaces/ListaOrdenada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/interfaces/Pila.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Expedendora/src/ort/tp1/tdas/interfaces/Tda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Garage/Garage.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Pizzeria/Pizzeria.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/Tragamonedas.eml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/Tragamonedas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/Tragamonedas.userlibraries" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/Tragamonedas.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/examen/ExamenRecuperatorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/examen/clases/EstadoJuego.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/examen/clases/Juego.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/examen/clases/Mostrable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/examen/clases/Rodillo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/examen/clases/RodilloDeNumeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/examen/clases/Tragamonedas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/tp1/u5/tad/Cola.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/tp1/u5/tad/Pila.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/tp1/u5/tad/implementaciones/nodo/ColaNodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/tp1/u5/tad/implementaciones/nodo/Nodo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Tragamonedas/src/tp1/u5/tad/implementaciones/nodo/PilaNodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/Trenes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/final trenes t1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/clases/ClaseVagon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/clases/EmpresaTransporte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/clases/Identificable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/clases/Locomotora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/clases/Mostrable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/clases/TipoPasajero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/clases/Tren.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/clases/TrenPasajeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/clases/Vagon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/clases/VagonPasajeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/examen/examen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/implementaciones/ColaNodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/implementaciones/ListaOrdenadaIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/implementaciones/ListaOrdenadaNodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/implementaciones/Nodo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/implementaciones/NodoLista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/implementaciones/PilaNodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/implementaciones/TdaNodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/interfaces/Checkable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/interfaces/Cola.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/interfaces/ListaOrdenada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/interfaces/Pila.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/interfaces/Sizeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/interfaces/Tda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/interfaces/Tdas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PracticasParciales/SegundoParcial/Trenes/src/ar/edu/ort/tp1/tdas/interfaces/Tdas.ucls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +161,7 @@
       <workItem from="1654348809104" duration="90000" />
       <workItem from="1654375828293" duration="200000" />
       <workItem from="1654470812415" duration="11000" />
+      <workItem from="1654914470950" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Ejercicio 3 TP6 TP1">
       <created>1654189326817</created>
@@ -127,6 +213,11 @@
           <url>file://$PROJECT_DIR$/src/ar/edu/ort/Main_Ejercicio_3.java</url>
           <line>10</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ar/edu/ort/clases/ListaDeIdiomas.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
