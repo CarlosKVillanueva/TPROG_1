@@ -1,8 +1,8 @@
-package ar.edu.ort.tp1.pacial2.clases;
+package ar.edu.ort.tp1.parcial2.clases;
 
 public enum Topping {
 
-	TOMATE("Tomate"), JAMON("Jamón"), MORRON("Morrón"), CEBOLLA("Cebolla"), SALAMIN("Salamín");
+	TOMATE("Tomate"), JAMON("Jamï¿½n"), MORRON("Morrï¿½n"), CEBOLLA("Cebolla"), SALAMIN("Salamï¿½n");
 	
 	private String nombre;
 	

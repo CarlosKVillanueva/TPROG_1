@@ -1,6 +1,6 @@
-package ar.edu.ort.tdas.implementaciones;
+package ar.edu.ort.tp1.parcial2.tdas.implementaciones;
 
-import ar.edu.ort.tdas.interfaces.Pila;
+import ar.edu.ort.tp1.parcial2.tdas.interfaces.Pila;
 
 public class PilaNodos<T> extends TdaNodos<T> implements Pila<T> {
 

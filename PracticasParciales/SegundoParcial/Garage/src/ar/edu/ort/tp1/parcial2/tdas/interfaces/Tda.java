@@ -1,4 +1,4 @@
-package ar.edu.ort.tdas.interfaces;
+package ar.edu.ort.tp1.parcial2.tdas.interfaces;
 
 public interface Tda {
 

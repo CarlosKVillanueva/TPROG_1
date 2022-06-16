@@ -43,8 +43,8 @@ public abstract class Vehiculo {
 	 * @throws EstacionamientoException Si el horario es erroneo
 	 */
 	private void setHoraIngreso(Hora horaIngreso) throws EstacionamientoException {
-		if ( validarHora(horaIngreso))
-
+		validarHora(horaIngreso);
+		this.horaIngreso = horaIngreso;
 	}
 
 	/**
@@ -55,7 +55,12 @@ public abstract class Vehiculo {
 	 * @throws EstacionamientoException
 	 */
 	protected void validarHora(Hora hora) throws EstacionamientoException {
-//TODO COMPLETAR
+		if (hora.getHora() >= 0 && hora.getHora() <= 23)
+			throw new EstacionamientoException("Hora de ingreso inválidos");
+
+		if (hora.getHora() >= 0 && hora.getMinuto() <= 59)
+			throw new EstacionamientoException("Minutos de ingreso inválidos");
+
 	}
 
 	/**
@@ -64,7 +69,8 @@ public abstract class Vehiculo {
 	 * @param patente
 	 */
 	private void setPatente(String patente) {
-//TODO COMPLETAR
+		validarPatente(patente);
+		this.patente = patente;
 	}
 
 	/**
@@ -98,40 +104,37 @@ public abstract class Vehiculo {
 	 * @return
 	 */
 	public Hora calcularTiempoEstadia(Hora horaSalida) {
-//TODO DESCOMENTAR DEBE COMPILAR
-//		LocalTime horarioIngreso = LocalTime.of(this.horaIngreso.getHora(), this.horaIngreso.getMinuto());
-//		LocalTime horarioEgreso = LocalTime.of(horaSalida.getHora(), horaSalida.getMinuto());
-//		Duration duration = Duration.between(horarioIngreso, horarioEgreso);
-//
-//		return new Hora((int) duration.toHours(), (int) duration.toMinutes() % 60);
-//Sacar el return null;
-		return null;
+
+		LocalTime horarioIngreso = LocalTime.of(this.horaIngreso.getHora(), this.horaIngreso.getMinuto());
+		LocalTime horarioEgreso = LocalTime.of(horaSalida.getHora(), horaSalida.getMinuto());
+		Duration duration = Duration.between(horarioIngreso, horarioEgreso);
+
+		return new Hora((int) duration.toHours(), (int) duration.toMinutes() % 60);
+
 	}
 
 	/**
 	 * Redondea el número de minutos de egreso a una base, si la base es 5, y el nro
 	 * de minutos es 2 devolverá 5, si el nro de minutos es 7 devolvera 10
 	 * 
-	 * @param minutos
-	 * @param i
-	 * @return
+	 * //@param minutos
+	 * //@param i
+	 * //@return
 	 */
 	protected int redondear(int minutos, int base) {
 		return minutos + (base - minutos % base);
 	}
 
 	/**
-	 * @param horasEgreso
-	 * @param minutosEgreso
+	 * //@param horasEgreso
+	 * //@param minutosEgreso
 	 */
 	public void validarHoraEgreso(Hora hora) throws EstacionamientoException {
-// TODO COMPLETAR y descomentar
-//		LocalTime horarioIngreso = LocalTime.of(this.horaIngreso.getHora(), this.horaIngreso.getMinuto());
-//		LocalTime horarioEgreso = LocalTime.of(hora.getHora(), hora.getMinuto());
-
-		//TODO COMPLETAR
-		//Sirve para ver si el horario de egreso es anterior al de ingreso
-//		horarioEgreso.compareTo(horarioIngreso) < 0
+		LocalTime horarioIngreso = LocalTime.of(this.horaIngreso.getHora(), this.horaIngreso.getMinuto());
+		LocalTime horarioEgreso = LocalTime.of(hora.getHora(), hora.getMinuto());
+		if (horarioEgreso.compareTo(horarioIngreso) < 0) {
+			throw new EstacionamientoException("Horario de egreso anterior al de ingreso");
+		}
 	}
 
 	/*
@@ -144,4 +147,11 @@ public abstract class Vehiculo {
 		return "Vehiculo [patente=" + patente + ", horaIngreso=" + horaIngreso + "]";
 	}
 
+	public String getPatente() {
+		return patente;
+	}
+
+	public boolean mismaPatente(String patente) {
+		return this.patente.equals(patente);
+	}
 }

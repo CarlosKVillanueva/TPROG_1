@@ -1,4 +1,4 @@
-package ar.edu.ort.tp1.pacial2.clases;
+package ar.edu.ort.tp1.parcial2.clases;
 
 public enum AdicionalQueso {
 

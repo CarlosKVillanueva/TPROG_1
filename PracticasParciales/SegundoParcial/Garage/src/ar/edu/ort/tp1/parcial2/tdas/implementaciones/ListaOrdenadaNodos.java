@@ -1,8 +1,8 @@
-package ar.edu.ort.tdas.implementaciones;
+package ar.edu.ort.tp1.parcial2.tdas.implementaciones;
 
 import java.util.Iterator;
 
-import ar.edu.ort.tdas.interfaces.ListaOrdenada;
+import ar.edu.ort.tp1.parcial2.tdas.interfaces.ListaOrdenada;
 
 public abstract class ListaOrdenadaNodos<K, T> extends TdaNodos<T> implements ListaOrdenada<K, T> {
 

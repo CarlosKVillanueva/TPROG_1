@@ -11,7 +11,7 @@ import ar.edu.ort.tp1.parcial2.exceptions.EstacionamientoException;
  */
 public class Motocicleta extends Vehiculo {
 
-	// TODO COMPLETAR
+	private float precioPorHora;
 
 	/**
 	 * Constructor de motocicleta
@@ -21,7 +21,8 @@ public class Motocicleta extends Vehiculo {
 	 * @param precioPorHora precio de la hora completa de las motocicletas
 	 */
 	public Motocicleta(String patente, Hora horaIngreso, float precioPorHora) {
-//		TODO COMPLETAR
+		super(patente, horaIngreso);
+		this.precioPorHora = precioPorHora;
 	}
 
 	/**
@@ -29,11 +30,9 @@ public class Motocicleta extends Vehiculo {
 	 * formato de tres números y tres letas por ejemplo '182ABC'.
 	 */
 	public void validarPatente(String patente) throws EstacionamientoException {
-
-		// TODO COMPLETAR
-		// FORMA DE VERIFICAR QUE LA PATENTE TIENE EN FORMATO CORRECTO
-//		patente.matches(TipoVehiculo.MOTOCICLETA.getRegex())
-
+		if (!patente.matches(TipoVehiculo.MOTOCICLETA.getRegex())) {
+			throw new EstacionamientoException("Patente errónea");
+		}
 	}
 
 	/**

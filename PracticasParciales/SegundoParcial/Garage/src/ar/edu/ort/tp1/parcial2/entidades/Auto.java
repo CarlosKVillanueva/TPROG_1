@@ -32,11 +32,9 @@ public class Auto extends Vehiculo {
 	 */
 	@Override
 	public void validarPatente(String patente) throws EstacionamientoException {
-
-		// TODO COMPLETAR
-		// FORMA DE VERIFICAR QUE LA PATENTE TIENE EN FORMATO CORRECTO
-//		patente.matches(TipoVehiculo.AUTO.getRegex())
-
+		if (!patente.matches(TipoVehiculo.AUTO.getRegex())) {
+			throw new EstacionamientoException("Patente errónea");
+		}
 	}
 
 	/**
@@ -49,6 +47,8 @@ public class Auto extends Vehiculo {
 //TODO COMPLETAR
 
 		float importe = 0;
+
+
 		return importe;
 	}
 

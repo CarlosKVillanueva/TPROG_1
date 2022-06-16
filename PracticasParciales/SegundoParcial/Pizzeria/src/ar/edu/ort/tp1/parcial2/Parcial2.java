@@ -1,11 +1,6 @@
-package ar.edu.ort.tp1.pacial2;
+package ar.edu.ort.tp1.parcial2;
 
-import ar.edu.ort.tp1.pacial2.clases.Pizzeria;
-import ar.edu.ort.tp1.pacial2.clases.TipoDeMasa;
-import ar.edu.ort.tp1.pacial2.clases.TipoPizza;
-import ar.edu.ort.tp1.pacial2.clases.Topping;
-import ar.edu.ort.tp1.pacial2.clases.TamanioDePizza;
-import ar.edu.ort.tp1.pacial2.clases.AdicionalQueso;
+import ar.edu.ort.tp1.parcial2.clases.*;
 
 public class Parcial2 {
 
@@ -69,24 +64,35 @@ public class Parcial2 {
 	}
 
 	private static void pedirEspecialNula(Pizzeria laPizzeria, Topping topping) {
-		laPizzeria.ingresarPedido(null, topping);
+		try {
+			laPizzeria.ingresarPedido(null, topping);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
-	private static void pedirTradicional(Pizzeria laPizzeria, String nombre, float costoBase, float porcentajeGanancia,
-			TipoDeMasa tipoDeMasa, Topping topping) {
-		laPizzeria.ingresarPedido(new Tradicional(nombre, costoBase, porcentajeGanancia, tipoDeMasa), topping);
+	private static void pedirTradicional(Pizzeria laPizzeria, String nombre, float costoBase, float porcentajeGanancia, TipoDeMasa tipoDeMasa, Topping topping) {
+		try {
+			laPizzeria.ingresarPedido(new Tradicional(nombre, costoBase, porcentajeGanancia, tipoDeMasa), topping);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
-	private static void pedirEspecial(Pizzeria laPizzeria, String nombre, float costoBase, float porcentajeGanancia,
-			int cantidadFainas, TamanioDePizza tamanioDePizza, Topping topping) {
-		laPizzeria.ingresarPedido(new Especial(nombre, costoBase, porcentajeGanancia, cantidadFainas, tamanioDePizza),
-				topping);
+	private static void pedirEspecial(Pizzeria laPizzeria, String nombre, float costoBase, float porcentajeGanancia, int cantidadFainas, TamanioDePizza tamanioDePizza, Topping topping) {
+		try {
+			laPizzeria.ingresarPedido(new Especial(nombre, costoBase, porcentajeGanancia, cantidadFainas, tamanioDePizza), topping);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
-	private static void pedirRectangular(Pizzeria laPizzeria, String nombre, float costoBase, float porcentajeGanancia,
-			long largo, long ancho, AdicionalQueso adicionalQueso, Topping topping) {
-		laPizzeria.ingresarPedido(new Rectangular(nombre, costoBase, porcentajeGanancia, largo, ancho, adicionalQueso),
-				topping);
+	private static void pedirRectangular(Pizzeria laPizzeria, String nombre, float costoBase, float porcentajeGanancia, long largo, long ancho, AdicionalQueso adicionalQueso, Topping topping) {
+		try {
+			laPizzeria.ingresarPedido(new Rectangular(nombre, costoBase, porcentajeGanancia, largo, ancho, adicionalQueso), topping);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 }

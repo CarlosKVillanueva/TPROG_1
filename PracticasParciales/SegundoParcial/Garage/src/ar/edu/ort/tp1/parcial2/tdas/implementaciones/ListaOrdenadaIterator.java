@@ -1,4 +1,4 @@
-package ar.edu.ort.tdas.implementaciones;
+package ar.edu.ort.tp1.parcial2.tdas.implementaciones;
 
 import java.util.Iterator;
 
